@@ -3,4 +3,7 @@
     <string name="tv_upcoming_matches">Upcoming Matches</string>
     <string name="tv_standings">Standings</string>
     <string name="tv_top_scorers">Top Scorers</string>
+    <string name="tv_home_team">Home Team</string>
+    <string name="tv_away_team">Away Team</string>
+    <string name="tv_schedule">Schedule</string>
 </resources>
