@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">SwiftScore</string>
+    <string name="tv_upcoming_matches">Upcoming Matches</string>
+    <string name="tv_standings">Standings</string>
+    <string name="tv_top_scorers">Top Scorers</string>
 </resources>

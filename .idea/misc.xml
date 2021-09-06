@@ -6,6 +6,10 @@
         <entry key="app/src/main/res/drawable/ic_swiftlogo.xml" value="0.11302083333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17962962962962964" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.17962962962962964" />
+        <entry key="app/src/main/res/layout/custom_logo_actionbar.xml" value="0.16574074074074074" />
+        <entry key="app/src/main/res/layout/fragment_league_table.xml" value="0.16574074074074074" />
+        <entry key="app/src/main/res/layout/fragment_top_scorers.xml" value="0.16574074074074074" />
+        <entry key="app/src/main/res/layout/fragment_upcoming_matches.xml" value="0.16574074074074074" />
       </map>
     </option>
   </component>
