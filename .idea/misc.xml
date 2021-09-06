@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_swiftlogo.xml" value="0.11302083333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.17962962962962964" />
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.17962962962962964" />
       </map>
