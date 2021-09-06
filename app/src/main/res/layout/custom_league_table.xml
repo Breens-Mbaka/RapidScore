@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/teamPosition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="132dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="1"
+        android:textColor="@color/grey"
+        android:textSize="13sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/teamCrest"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="44dp"
+        app:layout_constraintBottom_toBottomOf="@+id/teamPosition"
+        app:layout_constraintStart_toEndOf="@+id/teamPosition"
+        app:layout_constraintTop_toTopOf="@+id/teamPosition"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+    <TextView
+        android:id="@+id/teamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="Tottenham"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/teamCrest"
+        app:layout_constraintStart_toEndOf="@+id/teamCrest"
+        app:layout_constraintTop_toTopOf="@+id/teamCrest"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/gamesPlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="3"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/teamName"
+        app:layout_constraintStart_toEndOf="@+id/teamName"
+        app:layout_constraintTop_toTopOf="@+id/teamName" />
+
+    <TextView
+        android:id="@+id/goalDifference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="3"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gamesPlayed"
+        app:layout_constraintStart_toEndOf="@+id/gamesPlayed"
+        app:layout_constraintTop_toTopOf="@+id/gamesPlayed" />
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="9"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/goalDifference"
+        app:layout_constraintStart_toEndOf="@+id/goalDifference"
+        app:layout_constraintTop_toTopOf="@+id/goalDifference" />
+</androidx.constraintlayout.widget.ConstraintLayout>

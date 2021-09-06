@@ -24,9 +24,47 @@
         android:layout_height="0dp"
         android:paddingBottom="50dp"
         android:clipToPadding="false"
-        app:layout_constraintTop_toBottomOf="@id/tvUpcomingMatches"
+        app:layout_constraintTop_toBottomOf="@id/hash"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="#"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvUpcomingMatches" />
+
+    <TextView
+        android:id="@+id/tvPlayerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="Top Scorers"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/hash"
+        app:layout_constraintStart_toEndOf="@+id/hash"
+        app:layout_constraintTop_toTopOf="@+id/hash"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvGoals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="G"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPlayerName"
+        app:layout_constraintStart_toEndOf="@+id/tvPlayerName"
+        app:layout_constraintTop_toTopOf="@+id/tvPlayerName"
+        app:layout_constraintVertical_bias="1.0" />
     <ProgressBar
         android:id="@+id/progressBar"
         style="?attr/progressBarStyle"

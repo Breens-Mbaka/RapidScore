@@ -1,32 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/black_200">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvLeagueTable"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hash" />
     <TextView
         android:id="@+id/tvStandings"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="56dp"
         android:fontFamily="@font/nunito_sans_extrabold"
         android:text="@string/tv_standings"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvLeagueTable"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:paddingBottom="50dp"
-        android:clipToPadding="false"
-        app:layout_constraintTop_toBottomOf="@id/tvStandings"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
     <ProgressBar
         android:id="@+id/progressBar"
         style="?attr/progressBarStyle"
@@ -38,5 +40,67 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="#"
+        android:textColor="@color/grey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStandings" />
+
+    <TextView
+        android:id="@+id/tvLeagueName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="PREMIER LEAGUE"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/hash"
+        app:layout_constraintStart_toEndOf="@+id/hash"
+        app:layout_constraintTop_toTopOf="@+id/hash"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvGamesPlayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="P"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLeagueName"
+        app:layout_constraintStart_toEndOf="@+id/tvLeagueName"
+        app:layout_constraintTop_toTopOf="@+id/tvLeagueName"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/tvGoalDifference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="GD"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGamesPlayed"
+        app:layout_constraintStart_toEndOf="@+id/tvGamesPlayed"
+        app:layout_constraintTop_toTopOf="@+id/tvGamesPlayed" />
+
+    <TextView
+        android:id="@+id/tvPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="PTS"
+        android:textColor="@color/grey"
+        app:layout_constraintBottom_toBottomOf="@+id/tvGoalDifference"
+        app:layout_constraintStart_toEndOf="@+id/tvGoalDifference"
+        app:layout_constraintTop_toTopOf="@+id/tvGoalDifference" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
