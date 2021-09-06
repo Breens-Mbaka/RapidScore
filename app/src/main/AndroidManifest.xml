@@ -10,10 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SwiftScore" >
         <activity
-            android:name=".ui.SplashScreen"
+            android:name="com.example.swiftscore.ui.SplashScreen"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".HomeActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

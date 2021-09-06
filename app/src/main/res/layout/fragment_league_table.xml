@@ -45,7 +45,7 @@
         android:id="@+id/hash"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="25dp"
         android:layout_marginTop="24dp"
         android:fontFamily="@font/nunito_sans_extrabold"
         android:text="#"
@@ -70,14 +70,14 @@
         android:id="@+id/tvGamesPlayed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="40dp"
         android:fontFamily="@font/nunito_sans_extrabold"
         android:text="P"
         android:textColor="@color/grey"
         app:layout_constraintBottom_toBottomOf="@+id/tvLeagueName"
         app:layout_constraintStart_toEndOf="@+id/tvLeagueName"
         app:layout_constraintTop_toTopOf="@+id/tvLeagueName"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/tvGoalDifference"

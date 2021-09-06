@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/upcomingMatchesFragment"
+        android:title="@string/bn_tvMatches"
+        android:icon="@drawable/ic_baseline_event_24"/>
+
+    <item android:id="@+id/leagueTableFragment"
+    android:title="@string/bn_tvStandings"
+    android:icon="@drawable/ic_baseline_table_rows_24"/>
+
+    <item android:id="@+id/topScorersFragment"
+    android:title="@string/bn_tvTopscorers"
+    android:icon="@drawable/ic_baseline_leaderboard_24"/>
+
+</menu>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/upcomingMatchesFragment">
+
+    <fragment
+        android:id="@+id/upcomingMatchesFragment"
+        android:name="com.example.swiftscore.ui.fragments.UpcomingMatchesFragment"
+        android:label="UpcomingMatchesFragment" />
+    <fragment
+        android:id="@+id/leagueTableFragment"
+        android:name="com.example.swiftscore.ui.fragments.LeagueTableFragment"
+        android:label="LeagueTableFragment" />
+    <fragment
+        android:id="@+id/topScorersFragment"
+        android:name="com.example.swiftscore.ui.fragments.TopScorersFragment"
+        android:label="TopScorersFragment" />
+</navigation>

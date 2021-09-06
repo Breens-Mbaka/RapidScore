@@ -6,4 +6,7 @@
     <string name="tv_home_team">Home Team</string>
     <string name="tv_away_team">Away Team</string>
     <string name="tv_schedule">Schedule</string>
+    <string name="bn_tvMatches">Matches</string>
+    <string name="bn_tvStandings">Standings</string>
+    <string name="bn_tvTopscorers">Top Scorers</string>
 </resources>

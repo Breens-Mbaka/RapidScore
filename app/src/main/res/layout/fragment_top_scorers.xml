@@ -44,7 +44,7 @@
         android:id="@+id/tvPlayerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="70dp"
         android:fontFamily="@font/nunito_sans_extrabold"
         android:text="Top Scorers"
         android:textColor="@color/grey"
