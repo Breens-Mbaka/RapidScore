@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="40dp"
                 android:fontFamily="@font/nunito_sans_extrabold"
-                android:text="@string/tv_away_team"
+                android:text="@string/tv_home_team"
                 android:textColor="@color/white"
                 android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="@id/homeTeamCrest"
@@ -57,14 +57,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/nunito_sans_extrabold"
-                android:text="@string/tv_home_team"
+                android:text="@string/tv_away_team"
                 android:textColor="@color/white"
                 android:textSize="12sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/awayTeamCrest"
                 app:layout_constraintEnd_toEndOf="@+id/tvHomeTeam"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="@id/tvHomeTeam"
-                app:layout_constraintTop_toBottomOf="@+id/tvHomeTeam" />
+                app:layout_constraintTop_toTopOf="@+id/awayTeamCrest" />
 
             <TextView
                 android:id="@+id/tvSchedule"
