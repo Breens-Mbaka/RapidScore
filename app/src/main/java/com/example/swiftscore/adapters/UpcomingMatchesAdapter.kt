@@ -43,9 +43,9 @@ class UpcomingMatchesAdapter : RecyclerView.Adapter<UpcomingMatchesAdapter.Match
         val match = differ.currentList[position]
         holder.itemView.apply {
             Glide.with(this).load(match.home_team.logo).into(homeTeamCrest)
-            tvHomeTeam.text = match.home_team.name
+            tvHomeTeam.text = match.home_team.short_code
             Glide.with(this).load(match.away_team.logo).into(awayTeamCrest)
-            tvAwayTeam.text = match.away_team.name
+            tvAwayTeam.text = match.away_team.short_code
             tvSchedule.text = match.match_start
         }
     }

@@ -3,7 +3,7 @@ package com.example.swiftscore.ui.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import com.example.swiftscore.HomeActivity
+import com.example.swiftscore.ui.HomeActivity
 import com.example.swiftscore.R
 import com.example.swiftscore.ui.MatchesViewModel
 
