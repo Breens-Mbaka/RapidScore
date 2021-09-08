@@ -42,7 +42,14 @@ class LeagueTableAdapter : RecyclerView.Adapter<LeagueTableAdapter.LeagueTableVi
     override fun onBindViewHolder(holder: LeagueTableViewHolder, position: Int) {
         val standing = differ.currentList[position]
         holder.itemView.apply {
-            teamPosition.text = standing.intRank
+            val rank = Integer.parseInt(standing.intRank)
+            if ( rank < 10) {
+                var position = "0$rank"
+                teamPosition.text = position
+            } else {
+                teamPosition.text = standing.intRank
+            }
+
             Glide.with(this).load(standing.strTeamBadge).into(teamCrest)
             teamName.text = standing.strTeam
             gamesPlayed.text = standing.intPlayed

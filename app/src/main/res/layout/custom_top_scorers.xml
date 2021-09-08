@@ -19,29 +19,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/teamCrest"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="44dp"
-        app:layout_constraintBottom_toBottomOf="@+id/playerPosition"
-        app:layout_constraintStart_toEndOf="@+id/playerPosition"
-        app:layout_constraintTop_toTopOf="@+id/playerPosition"
-        app:srcCompat="@drawable/ic_launcher_foreground" />
-
     <TextView
         android:id="@+id/playerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginStart="44dp"
         android:fontFamily="@font/nunito_sans_extrabold"
         android:text="Bruno Fernandes"
         android:textColor="@color/white"
-        android:textSize="12sp"
+        android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/teamCrest"
-        app:layout_constraintStart_toEndOf="@+id/teamCrest" />
+        app:layout_constraintStart_toEndOf="@+id/playerPosition"
+        app:layout_constraintTop_toTopOf="@+id/playerPosition" />
 
     <TextView
         android:id="@+id/clubName"
@@ -49,8 +38,8 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/nunito_sans_extrabold"
         android:text="Manchester United"
-        android:textSize="10sp"
         android:textColor="@color/grey"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/playerName"
         app:layout_constraintTop_toBottomOf="@+id/playerName" />
 
@@ -58,13 +47,13 @@
         android:id="@+id/goals"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
+        android:layout_marginStart="280dp"
         android:fontFamily="@font/nunito_sans_extrabold"
         android:text="4"
         android:textColor="@color/green"
         android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/clubName"
-        app:layout_constraintStart_toEndOf="@+id/playerName"
+        app:layout_constraintBottom_toTopOf="@+id/clubName"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/playerName" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
