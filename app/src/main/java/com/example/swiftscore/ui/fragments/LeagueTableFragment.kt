@@ -25,7 +25,7 @@ class LeagueTableFragment : Fragment(R.layout.fragment_league_table) {
         setupRecyclerView()
 
         viewModel.leagueTable.observe(viewLifecycleOwner, Observer { response ->
-            when(response) {
+            when (response) {
                 is Resource.Success -> {
                     hideProgressBar()
                     response.data?.let { standingsResponse ->

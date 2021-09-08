@@ -57,6 +57,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:singleLine="true"
+            app:checkedChip="@id/matchday1"
+            android:focusableInTouchMode="true"
+            android:scrollbars="none"
+            app:singleSelection="true"
             app:selectionRequired="true">
 
             <com.google.android.material.chip.Chip
@@ -64,51 +68,56 @@
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="@string/tvMatchday1" />
+                android:text="@string/tvMatchday1"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday2"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="@string/tvMatchday_2" />
+                android:text="@string/tvMatchday_2"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday3"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_3" />
+                android:text="@string/tvMatchday_3"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday4"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_4" />
+                android:text="@string/tvMatchday_4"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday5"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_5" />
+                android:text="@string/tvMatchday_5"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday6"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_6" />
+                android:text="@string/tvMatchday_6"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday7"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_7" />
+                android:text="@string/tvMatchday_7"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday8"
@@ -116,7 +125,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/tvMatchday_8" />
+                android:text="@string/tvMatchday_8"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday9"
@@ -124,42 +134,48 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/tvMatchday_9" />
+                android:text="@string/tvMatchday_9"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday10"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_10" />
+                android:text="@string/tvMatchday_10"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday11"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_11" />
+                android:text="@string/tvMatchday_11"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday12"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_12" />
+                android:text="@string/tvMatchday_12"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday13"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_13" />
+                android:text="@string/tvMatchday_13"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday14"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_14" />
+                android:text="@string/tvMatchday_14"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday15"
@@ -167,7 +183,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/tvMatchday_15" />
+                android:text="@string/tvMatchday_15"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday16"
@@ -175,42 +192,48 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/tvMatchday_16" />
+                android:text="@string/tvMatchday_16"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday17"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_17" />
+                android:text="@string/tvMatchday_17"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday18"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_18" />
+                android:text="@string/tvMatchday_18"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday19"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_19" />
+                android:text="@string/tvMatchday_19"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday20"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_20" />
+                android:text="@string/tvMatchday_20"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday21"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_21" />
+                android:text="@string/tvMatchday_21"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday22"
@@ -218,7 +241,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/tvMatchday_22" />
+                android:text="@string/tvMatchday_22"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday23"
@@ -226,49 +250,56 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/tvMatchday_23" />
+                android:text="@string/tvMatchday_23"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday24"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/matchday_24" />
+                android:text="@string/matchday_24"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday25"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_25" />
+                android:text="@string/tvMatchday_25"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday26"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_26" />
+                android:text="@string/tvMatchday_26"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday27"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_27" />
+                android:text="@string/tvMatchday_27"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday28"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_28" />
+                android:text="@string/tvMatchday_28"
+                app:ensureMinTouchTargetSize="true"/>
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday29"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/tvMatchday_29" />
+                android:text="@string/tvMatchday_29"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday30"
@@ -276,42 +307,48 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/tvMatchday_30" />
+                android:text="@string/tvMatchday_30"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday31"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_31" />
+                android:text="@string/tvMatchday_31"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday32"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_32" />
+                android:text="@string/tvMatchday_32"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday33"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_33" />
+                android:text="@string/tvMatchday_33"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday34"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_34" />
+                android:text="@string/tvMatchday_34"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday35"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_35" />
+                android:text="@string/tvMatchday_35"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday36"
@@ -319,7 +356,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/tvMatchday_36" />
+                android:text="@string/tvMatchday_36"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday37"
@@ -327,14 +365,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="@string/tvMatchday_37" />
+                android:text="@string/tvMatchday_37"
+                app:ensureMinTouchTargetSize="true"/>
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/matchday38"
                 style="@style/Widget.MaterialComponents.Chip.Choice"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/tvMatchday_38" />
+                android:text="@string/tvMatchday_38"
+                app:ensureMinTouchTargetSize="true"/>
 
         </com.google.android.material.chip.ChipGroup>
     </HorizontalScrollView>

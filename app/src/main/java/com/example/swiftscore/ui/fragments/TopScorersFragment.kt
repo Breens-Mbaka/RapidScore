@@ -25,7 +25,7 @@ class TopScorersFragment : Fragment(R.layout.fragment_top_scorers) {
         setupRecyclerView()
 
         viewModel.topScorers.observe(viewLifecycleOwner, Observer { response ->
-            when(response) {
+            when (response) {
                 is Resource.Success -> {
                     hideProgressBar()
                     response.data?.let { topScorersResponse ->
