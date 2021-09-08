@@ -4,14 +4,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_marginBottom="30dp"
+    android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/playerPosition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="132dp"
         android:fontFamily="@font/nunito_sans_extrabold"
         android:text="1"
         android:textColor="@color/grey"
@@ -50,6 +50,7 @@
         android:fontFamily="@font/nunito_sans_extrabold"
         android:text="Manchester United"
         android:textSize="10sp"
+        android:textColor="@color/grey"
         app:layout_constraintStart_toStartOf="@+id/playerName"
         app:layout_constraintTop_toBottomOf="@+id/playerName" />
 
@@ -60,7 +61,7 @@
         android:layout_marginStart="80dp"
         android:fontFamily="@font/nunito_sans_extrabold"
         android:text="4"
-        android:textColor="@color/white"
+        android:textColor="@color/green"
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/clubName"
         app:layout_constraintStart_toEndOf="@+id/playerName"

@@ -1,6 +1,6 @@
 package com.example.swiftscore.models.upcomingmatchesmodel
 
-data class DataXX(
+data class Table(
     val away_team: AwayTeam,
     val group: Group,
     val home_team: HomeTeam,

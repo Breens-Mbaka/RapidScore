@@ -3,6 +3,8 @@ package com.example.swiftscore.ui
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.example.swiftscore.models.standingsmodel.StandingsResponse
+import com.example.swiftscore.models.topscorersmodel.TopScorersResponse
 import com.example.swiftscore.models.upcomingmatchesmodel.UpcomingMatchesResponse
 import com.example.swiftscore.repository.MatchesRepository
 import com.example.swiftscore.util.Constants.Companion.API_KEY
@@ -15,9 +17,13 @@ class MatchesViewModel(
 ) : ViewModel() {
 
     val upcomingMatches: MutableLiveData<Resource<UpcomingMatchesResponse>> = MutableLiveData()
+    val topScorers: MutableLiveData<Resource<TopScorersResponse>> = MutableLiveData()
+    val leagueTable: MutableLiveData<Resource<StandingsResponse>> = MutableLiveData()
 
     init {
         getUpcomingMatches(API_KEY,"1980","2021-09-11","2021-09-13")
+        getTopScorers(API_KEY,"1980")
+        getLeagueTable()
     }
 
     fun getUpcomingMatches(apiKey: String, seasonId: String, dateFrom: String, dateTo: String) =
@@ -28,6 +34,39 @@ class MatchesViewModel(
         }
 
     private fun handleUpcomingMatchesResponse(response: Response<UpcomingMatchesResponse>): Resource<UpcomingMatchesResponse> {
+        if (response.isSuccessful) {
+            response.body()?.let { resultResponse ->
+                return Resource.Success(resultResponse)
+            }
+        }
+        return Resource.Error(response.message())
+    }
+
+    fun getTopScorers(apiKey: String, seasonId: String) =
+        viewModelScope.launch {
+            topScorers.postValue(Resource.Loading())
+            val response = matchesRepository.getTopScorers(apiKey,seasonId)
+            topScorers.postValue(handleTopScorersResponse(response))
+        }
+
+    private fun handleTopScorersResponse(response: Response<TopScorersResponse>): Resource<TopScorersResponse> {
+        if (response.isSuccessful) {
+            response.body()?.let { resultResponse ->
+                return Resource.Success(resultResponse)
+            }
+        }
+        return Resource.Error(response.message())
+    }
+
+    fun getLeagueTable() {
+        viewModelScope.launch {
+            leagueTable.postValue(Resource.Loading())
+            val response = matchesRepository.getLeagueTable()
+            leagueTable.postValue(handleLeagueTableResponse(response))
+        }
+    }
+
+    private fun handleLeagueTableResponse(response: Response<StandingsResponse>): Resource<StandingsResponse> {
         if (response.isSuccessful) {
             response.body()?.let { resultResponse ->
                 return Resource.Success(resultResponse)

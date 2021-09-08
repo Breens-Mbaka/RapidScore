@@ -8,21 +8,18 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.swiftscore.R
-import com.example.swiftscore.models.upcomingmatchesmodel.DataXX
+import com.example.swiftscore.models.upcomingmatchesmodel.Table
 import kotlinx.android.synthetic.main.custom_upcoming_matches.view.*
-import okhttp3.internal.format
-import java.text.SimpleDateFormat
-import java.util.*
 
 class UpcomingMatchesAdapter : RecyclerView.Adapter<UpcomingMatchesAdapter.MatchesViewHolder>(){
     inner class MatchesViewHolder(itemView:  View): RecyclerView.ViewHolder(itemView)
 
-    private val differCallback = object : DiffUtil.ItemCallback<DataXX>() {
-        override fun areItemsTheSame(oldItem: DataXX, newItem: DataXX): Boolean {
+    private val differCallback = object : DiffUtil.ItemCallback<Table>() {
+        override fun areItemsTheSame(oldItem: Table, newItem: Table): Boolean {
             return oldItem.match_start == newItem.match_start
         }
 
-        override fun areContentsTheSame(oldItem: DataXX, newItem: DataXX): Boolean {
+        override fun areContentsTheSame(oldItem: Table, newItem: Table): Boolean {
             return  oldItem == newItem
         }
     }

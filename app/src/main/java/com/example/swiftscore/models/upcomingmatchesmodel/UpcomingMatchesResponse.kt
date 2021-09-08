@@ -1,6 +1,6 @@
 package com.example.swiftscore.models.upcomingmatchesmodel
 
 data class UpcomingMatchesResponse(
-    val `data`: List<DataXX>,
+    val `data`: List<Table>,
     val query: QueryXX
 )
