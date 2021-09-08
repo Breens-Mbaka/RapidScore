@@ -11,8 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/nunito_sans_extrabold"
-        android:text="@string/tv_upcoming_matches"
         android:padding="20dp"
+        android:text="@string/tv_upcoming_matches"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,19 +23,319 @@
         android:id="@+id/rvUpcomingMatches"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_marginTop="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvUpcomingMatches" />
+
     <ProgressBar
         android:id="@+id/progressBar"
         style="?attr/progressBarStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="invisible"
         android:background="@android:color/transparent"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/rvUpcomingMatches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/rvUpcomingMatches"
+        app:layout_constraintTop_toBottomOf="@+id/tvUpcomingMatches">
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleLine="true"
+            app:selectionRequired="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday1"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/tvMatchday1" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday2"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/tvMatchday_2" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday3"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_3" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday4"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_4" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday5"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_5" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday6"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_6" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday7"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_7" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday8"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/tvMatchday_8" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday9"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/tvMatchday_9" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday10"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_10" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday11"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_11" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday12"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_12" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday13"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_13" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday14"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_14" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday15"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/tvMatchday_15" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday16"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/tvMatchday_16" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday17"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_17" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday18"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_18" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday19"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_19" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday20"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_20" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday21"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_21" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday22"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/tvMatchday_22" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday23"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/tvMatchday_23" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday24"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/matchday_24" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday25"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_25" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday26"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_26" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday27"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_27" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday28"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_28" />
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday29"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/tvMatchday_29" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday30"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/tvMatchday_30" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday31"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_31" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday32"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_32" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday33"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_33" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday34"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_34" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday35"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_35" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday36"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/tvMatchday_36" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday37"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/tvMatchday_37" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/matchday38"
+                style="@style/Widget.MaterialComponents.Chip.Choice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tvMatchday_38" />
+
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
