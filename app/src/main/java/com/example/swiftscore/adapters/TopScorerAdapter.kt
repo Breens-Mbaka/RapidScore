@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import androidx.room.util.StringUtil
 import com.bumptech.glide.Glide
 import com.example.swiftscore.R
 import com.example.swiftscore.models.clubdetailmodel.DataX
@@ -41,8 +42,16 @@ class TopScorerAdapter: RecyclerView.Adapter<TopScorerAdapter.TopScorerViewHolde
     override fun onBindViewHolder(holder: TopScorerViewHolder, position: Int) {
         val player = differ.currentList[position]
         holder.itemView.apply {
-            playerPosition.text = player.pos.toString()
-            playerName.text = player.player.player_name
+            val rank = player.pos
+            if ( rank < 10) {
+                var position = "0$rank"
+                playerPosition.text = position
+            } else {
+                playerPosition.text = player.pos.toString()
+            }
+            var name = player.player.player_name
+            name = name.substring(0,10) + "..."
+            playerName.text = name
             clubName.text = player.team.team_name
             goals.text = player.goals.overall.toString()
         }
