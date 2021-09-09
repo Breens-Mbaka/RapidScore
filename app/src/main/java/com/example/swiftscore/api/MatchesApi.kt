@@ -6,6 +6,7 @@ import com.example.swiftscore.models.clubdetailmodel.ClubDetailsResponse
 import com.example.swiftscore.models.standingsmodel.StandingsResponse
 import com.example.swiftscore.models.topscorersmodel.TopScorersResponse
 import com.example.swiftscore.models.upcomingmatchesmodel.UpcomingMatchesResponse
+import com.example.swiftscore.util.Constants.Companion.CURRENT_DATE
 import com.example.swiftscore.util.Constants.Companion.MATCHDAY_1_START_DATE
 import com.example.swiftscore.util.Constants.Companion.MATCHDAY_38_FROM_DATE
 import com.example.swiftscore.util.Constants.Companion.PL_ID
@@ -42,7 +43,7 @@ interface MatchesApi {
         @Query("season_id")
         seasonId: String = SEASON_ID,
         @Query("date_from")
-        dateFrom: String = MATCHDAY_1_START_DATE,
+        dateFrom: String = CURRENT_DATE,
         @Query("date_to")
         dateTo: String = MATCHDAY_38_FROM_DATE
     ): Response<UpcomingMatchesResponse>

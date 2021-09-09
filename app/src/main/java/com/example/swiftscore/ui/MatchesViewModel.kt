@@ -8,6 +8,7 @@ import com.example.swiftscore.models.standingsmodel.StandingsResponse
 import com.example.swiftscore.models.topscorersmodel.TopScorersResponse
 import com.example.swiftscore.models.upcomingmatchesmodel.UpcomingMatchesResponse
 import com.example.swiftscore.repository.MatchesRepository
+import com.example.swiftscore.util.Constants.Companion.CURRENT_DATE
 import com.example.swiftscore.util.Constants.Companion.MATCHDAY_1_START_DATE
 import com.example.swiftscore.util.Constants.Companion.MATCHDAY_38_FROM_DATE
 import com.example.swiftscore.util.Constants.Companion.SEASON_ID
@@ -24,7 +25,7 @@ class MatchesViewModel(
     val leagueTable: MutableLiveData<Resource<StandingsResponse>> = MutableLiveData()
 
     init {
-        getUpcomingMatches(API_KEY, SEASON_ID, MATCHDAY_1_START_DATE, MATCHDAY_38_FROM_DATE)
+        getUpcomingMatches(API_KEY, SEASON_ID, CURRENT_DATE, MATCHDAY_38_FROM_DATE)
         getTopScorers(API_KEY, SEASON_ID)
         getLeagueTable()
     }

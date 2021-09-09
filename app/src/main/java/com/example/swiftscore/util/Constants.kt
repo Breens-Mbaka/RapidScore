@@ -1,5 +1,8 @@
 package com.example.swiftscore.util
 
+import java.text.SimpleDateFormat
+import java.util.*
+
 class Constants {
     companion object {
         const val BASE_URL = "https://app.sportdataapi.com/"
@@ -14,6 +17,10 @@ class Constants {
 
         const val MATCHDAY_1_START_DATE = "2021-08-13"
         const val MATCHDAY_1_FROM_DATE = "2021-08-15"
+
+        //Get user current date according to their location
+        val CURRENT_DATE = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault())
+            .format(Date())
 
         const val MATCHDAY_2_START_DATE = "2021-08-21"
         const val MATCHDAY_2_FROM_DATE = "2021-08-23"
