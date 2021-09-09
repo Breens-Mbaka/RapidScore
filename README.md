@@ -44,15 +44,17 @@ A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit,
 | `s`      | `string` | **Required**. League Season Id e.g 2021-2022 |
 
 
+## Demo
+
+![5mfwtt](https://user-images.githubusercontent.com/72180010/132766680-472fb92a-e321-4058-8815-ed7f84d331c5.gif)
+
+
 ## Screenshots
 
   <p align="center">
-<img src="/images/upcomingmatches.png" width="40%"/> 
-<img src="/images/pastscores.png" width="40%"/> 
-<img src="/images/leaguetable.png" width="40%"/>
-<img src="/images/topscorers.png" width="40%"/>
+<img src="/images/upcomingmatches.png" width="20%" height="20%"/> 
+<img src="/images/pastscores.png" width="20%" height="20%"/> 
+<img src="/images/leaguetable.png" width="20%" height="20%"/>
+<img src="/images/topscorers.png" width="20%" height="20%"/>
 </p>
 
-## Demo)
-
-![5mfwtt](https://user-images.githubusercontent.com/72180010/132766680-472fb92a-e321-4058-8815-ed7f84d331c5.gif)
