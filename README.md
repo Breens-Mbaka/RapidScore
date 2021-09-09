@@ -22,7 +22,7 @@ A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit,
 | `dateTo` | `string` | **Required**.|
 
 #### Get League Table
-
+<div style="width:360px;max-width:100%;"><div style="height:0;padding-bottom:211.11%;position:relative;"><iframe width="360" height="760" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/5mfu1z"></iframe></div><p><a href="https://imgflip.com/gif/5mfu1z">via Imgflip</a></p></div>
 ```https
   GET /api/v1/json/1/lookuptable.php
 ```
@@ -55,4 +55,4 @@ A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit,
 
 ## Demo)
 
-<div style="width:360px;max-width:100%;"><div style="height:0;padding-bottom:211.11%;position:relative;"><iframe width="360" height="760" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameBorder="0" src="https://imgflip.com/embed/5mfu1z"></iframe></div><p><a href="https://imgflip.com/gif/5mfu1z">via Imgflip</a></p></div>
+<a href="https://imgflip.com/gif/5mfu1z"><img src="https://imgflip.com/gif/5mfu1z"/></a>
