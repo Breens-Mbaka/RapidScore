@@ -29,8 +29,8 @@
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 21-->[androidx.core:core:1.6.0] /home/breens/.gradle/caches/transforms-3/b317bbf3781c12b23ab81834595a78d8/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
 22        android:debuggable="true"
-23        android:icon="@mipmap/ic_launcher"
-23-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-43
+23        android:icon="@mipmap/ic_launcher_round"
+23-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-49
 24        android:label="@string/app_name"
 24-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:10:9-41
 25        android:roundIcon="@mipmap/ic_launcher_round"

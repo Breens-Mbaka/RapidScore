@@ -4,10 +4,6 @@
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/layout/fragment_top_scorers.xml"
     },
     {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/drawable_ic_baseline_table_rows_24.xml.flat",
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/drawable/ic_baseline_table_rows_24.xml"
     },
@@ -20,16 +16,16 @@
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/font/nunito_sans_extrabold.xml"
     },
     {
+        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/anim_slide_out_left.xml.flat",
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/anim/slide_out_left.xml"
     },
     {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/layout_fragment_upcoming_matches.xml.flat",
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/layout/fragment_upcoming_matches.xml"
-    },
-    {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/menu_bottom_navigation_menu.xml.flat",
@@ -40,28 +36,12 @@
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/layout/fragment_league_table.xml"
     },
     {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/navigation_home_nav_graph.xml.flat",
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/navigation/home_nav_graph.xml"
     },
     {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/drawable_leaderboard_selector.xml.flat",
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/drawable/leaderboard_selector.xml"
-    },
-    {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-mdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/layout_custom_league_table.xml.flat",
@@ -72,8 +52,8 @@
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/drawable/ic_baseline_leaderboard_24.xml"
     },
     {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/drawable_ic_baseline_table_rows_24_black.xml.flat",
@@ -112,20 +92,12 @@
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/drawable/standings_selector.xml"
     },
     {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/drawable_matches_selector.xml.flat",
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/drawable/matches_selector.xml"
-    },
-    {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-hdpi/ic_launcher.webp"
     },
     {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/layout_custom_top_scorers.xml.flat",
@@ -140,6 +112,10 @@
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/drawable/ic_baseline_event_24_black.xml"
     },
     {
+        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/generated/res/pngs/debug/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
@@ -148,16 +124,12 @@
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/drawable/splash_image.xml"
     },
     {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/anim_slide_in_left.xml.flat",
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/anim/slide_in_left.xml"
-    },
-    {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/anim_slide_in_right.xml.flat",

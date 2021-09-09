@@ -110,7 +110,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/breen
 	android:roundIcon
 		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-43
+		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-49
 	android:allowBackup
 		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:8:9-35
 	android:theme
