@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="/images/swiftscorelogo" width="40%" height="40%"/>
+  <img src="/images/swiftscorelogo" width="40%""/>
 </p>
 
 # SwiftScore
