@@ -55,4 +55,4 @@ A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit,
 
 ## Demo)
 
-<a href="https://imgflip.com/gif/5mfu1z"><img src="https://imgflip.com/gif/5mfu1z"/></a>
+<a href="https://imgflip.com/gif/5mfu1z"><img src="https://imgflip.com/gif"/></a>
