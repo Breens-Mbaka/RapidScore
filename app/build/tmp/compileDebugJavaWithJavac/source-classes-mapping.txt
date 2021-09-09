@@ -1,0 +1,2 @@
+com/example/swiftscore/BuildConfig.java
+ com.example.swiftscore.BuildConfig

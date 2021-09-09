@@ -1,0 +1,84 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.swiftscore"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:5:5-66
+11-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:5:22-64
+12
+13    <!--
+14    Allows Glide to monitor connectivity status and restart failed requests if users go from a
+15    a disconnected to a connected network state.
+16    -->
+17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+17-->[com.github.corouteam:GlideToVectorYou:v2.0.0] /home/breens/.gradle/caches/transforms-3/85d6e6efe8e63889cddfcc006e48e7df/transformed/jetified-GlideToVectorYou-v2.0.0/AndroidManifest.xml:16:5-79
+17-->[com.github.corouteam:GlideToVectorYou:v2.0.0] /home/breens/.gradle/caches/transforms-3/85d6e6efe8e63889cddfcc006e48e7df/transformed/jetified-GlideToVectorYou-v2.0.0/AndroidManifest.xml:16:22-76
+18
+19    <application
+19-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:7:5-29:19
+20        android:allowBackup="true"
+20-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:8:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.6.0] /home/breens/.gradle/caches/transforms-3/b317bbf3781c12b23ab81834595a78d8/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:icon="@mipmap/ic_launcher"
+23-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-43
+24        android:label="@string/app_name"
+24-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:10:9-41
+25        android:roundIcon="@mipmap/ic_launcher_round"
+25-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:11:9-54
+26        android:supportsRtl="true"
+26-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:12:9-35
+27        android:testOnly="true"
+28        android:theme="@style/Theme.SwiftScore" >
+28-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:13:9-48
+29        <activity
+29-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:14:9-16:39
+30            android:name="com.example.swiftscore.ui.SplashScreen"
+30-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:15:13-66
+31            android:exported="true" />
+31-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:16:13-36
+32        <activity
+32-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:17:9-25:20
+33            android:name="com.example.swiftscore.ui.HomeActivity"
+33-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:18:13-44
+34            android:exported="true" >
+34-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:19:13-36
+35            <intent-filter>
+35-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:20:13-24:29
+36                <action android:name="android.intent.action.MAIN" />
+36-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:21:17-69
+36-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:21:25-66
+37
+38                <category android:name="android.intent.category.LAUNCHER" />
+38-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:23:17-77
+38-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:23:27-74
+39            </intent-filter>
+40        </activity>
+41
+42        <meta-data
+42-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:26:9-28:57
+43            android:name="preloaded_fonts"
+43-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:27:13-43
+44            android:resource="@array/preloaded_fonts" />
+44-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:28:13-54
+45
+46        <service
+46-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+47            android:name="androidx.room.MultiInstanceInvalidationService"
+47-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+48            android:directBootAware="true"
+48-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+49            android:exported="false" />
+49-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+50    </application>
+51
+52</manifest>
