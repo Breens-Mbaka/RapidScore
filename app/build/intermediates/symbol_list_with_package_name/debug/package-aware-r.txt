@@ -1818,8 +1818,11 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable ic_baseline_event_24
+drawable ic_baseline_event_24_black
 drawable ic_baseline_leaderboard_24
+drawable ic_baseline_leaderboard_24_black
 drawable ic_baseline_table_rows_24
+drawable ic_baseline_table_rows_24_black
 drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -1830,6 +1833,8 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_splash_screen
 drawable ic_swiftlogo
+drawable leaderboard_selector
+drawable matches_selector
 drawable material_cursor_drawable
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
@@ -1863,6 +1868,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable splash_image
+drawable standings_selector
 drawable swiftlogo
 drawable test_custom_background
 drawable tooltip_frame_dark
@@ -2481,7 +2488,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_home
-layout activity_splash_screen
 layout custom_dialog
 layout custom_league_table
 layout custom_logo_actionbar
@@ -3454,6 +3460,7 @@ style Widget_MaterialComponents_Toolbar_PrimarySurface
 style Widget_MaterialComponents_Toolbar_Surface
 style Widget_MaterialComponents_Tooltip
 style Widget_Support_CoordinatorLayout
+style splashScreenTheme
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth

@@ -3,14 +3,14 @@
 
     <item android:id="@+id/upcomingMatchesFragment"
         android:title="@string/bn_tvMatches"
-        android:icon="@drawable/ic_baseline_event_24"/>
+        android:icon="@drawable/matches_selector"/>
 
     <item android:id="@+id/leagueTableFragment"
     android:title="@string/bn_tvStandings"
-    android:icon="@drawable/ic_baseline_table_rows_24"/>
+    android:icon="@drawable/standings_selector"/>
 
     <item android:id="@+id/topScorersFragment"
     android:title="@string/bn_tvTopscorers"
-    android:icon="@drawable/ic_baseline_leaderboard_24"/>
+    android:icon="@drawable/leaderboard_selector"/>
 
 </menu>

@@ -23,7 +23,7 @@
 17-->[com.github.corouteam:GlideToVectorYou:v2.0.0] /home/breens/.gradle/caches/transforms-3/85d6e6efe8e63889cddfcc006e48e7df/transformed/jetified-GlideToVectorYou-v2.0.0/AndroidManifest.xml:16:22-76
 18
 19    <application
-19-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:7:5-29:19
+19-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:7:5-26:19
 20        android:allowBackup="true"
 20-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:8:9-35
 21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -38,47 +38,41 @@
 26        android:supportsRtl="true"
 26-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:12:9-35
 27        android:testOnly="true"
-28        android:theme="@style/Theme.SwiftScore" >
-28-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:13:9-48
+28        android:theme="@style/splashScreenTheme" >
+28-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:13:9-49
 29        <activity
-29-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:14:9-16:39
-30            android:name="com.example.swiftscore.ui.SplashScreen"
-30-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:15:13-66
-31            android:exported="true" />
+29-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:14:9-22:20
+30            android:name="com.example.swiftscore.ui.HomeActivity"
+30-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:15:13-44
+31            android:exported="true" >
 31-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:16:13-36
-32        <activity
-32-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:17:9-25:20
-33            android:name="com.example.swiftscore.ui.HomeActivity"
-33-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:18:13-44
-34            android:exported="true" >
-34-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:19:13-36
-35            <intent-filter>
-35-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:20:13-24:29
-36                <action android:name="android.intent.action.MAIN" />
-36-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:21:17-69
-36-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:21:25-66
-37
-38                <category android:name="android.intent.category.LAUNCHER" />
-38-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:23:17-77
-38-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:23:27-74
-39            </intent-filter>
-40        </activity>
-41
-42        <meta-data
-42-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:26:9-28:57
-43            android:name="preloaded_fonts"
-43-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:27:13-43
-44            android:resource="@array/preloaded_fonts" />
-44-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:28:13-54
-45
-46        <service
-46-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
-47            android:name="androidx.room.MultiInstanceInvalidationService"
-47-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
-48            android:directBootAware="true"
-48-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
-49            android:exported="false" />
-49-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
-50    </application>
-51
-52</manifest>
+32            <intent-filter>
+32-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:17:13-21:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:18:17-69
+33-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:18:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:20:17-77
+35-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:20:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <meta-data
+39-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:23:9-25:57
+40            android:name="preloaded_fonts"
+40-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:24:13-43
+41            android:resource="@array/preloaded_fonts" />
+41-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:25:13-54
+42
+43        <service
+43-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+44            android:name="androidx.room.MultiInstanceInvalidationService"
+44-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+45            android:directBootAware="true"
+45-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+46            android:exported="false" />
+46-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+47    </application>
+48
+49</manifest>

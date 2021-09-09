@@ -10,10 +10,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.SwiftScore" >
-        <activity
-            android:name="com.example.swiftscore.ui.SplashScreen"
-            android:exported="true" />
+        android:theme="@style/splashScreenTheme" >
         <activity
             android:name=".ui.HomeActivity"
             android:exported="true" >

@@ -1817,8 +1817,11 @@ int drawable design_ic_visibility_off 0x7f080062
 int drawable design_password_eye 0x7f080063
 int drawable design_snackbar_background 0x7f080064
 int drawable ic_baseline_event_24 0x7f080065
+int drawable ic_baseline_event_24_black 0x7f080097
 int drawable ic_baseline_leaderboard_24 0x7f080066
+int drawable ic_baseline_leaderboard_24_black 0x7f080098
 int drawable ic_baseline_table_rows_24 0x7f080067
+int drawable ic_baseline_table_rows_24_black 0x7f080099
 int drawable ic_clock_black_24dp 0x7f080068
 int drawable ic_keyboard_black_24dp 0x7f080069
 int drawable ic_launcher_background 0x7f08006a
@@ -1829,6 +1832,8 @@ int drawable ic_mtrl_chip_checked_circle 0x7f08006e
 int drawable ic_mtrl_chip_close_circle 0x7f08006f
 int drawable ic_splash_screen 0x7f080070
 int drawable ic_swiftlogo 0x7f080071
+int drawable leaderboard_selector 0x7f08009a
+int drawable matches_selector 0x7f08009b
 int drawable material_cursor_drawable 0x7f080072
 int drawable material_ic_calendar_black_24dp 0x7f080073
 int drawable material_ic_clear_black_24dp 0x7f080074
@@ -1862,6 +1867,8 @@ int drawable notification_template_icon_bg 0x7f08008f
 int drawable notification_template_icon_low_bg 0x7f080090
 int drawable notification_tile_bg 0x7f080091
 int drawable notify_panel_notification_icon_bg 0x7f080092
+int drawable splash_image 0x7f08009e
+int drawable standings_selector 0x7f08009c
 int drawable swiftlogo 0x7f080093
 int drawable test_custom_background 0x7f080094
 int drawable tooltip_frame_dark 0x7f080095
@@ -2480,7 +2487,6 @@ int layout abc_search_view 0x7f0d0019
 int layout abc_select_dialog_material 0x7f0d001a
 int layout abc_tooltip 0x7f0d001b
 int layout activity_home 0x7f0d001c
-int layout activity_splash_screen 0x7f0d001d
 int layout custom_dialog 0x7f0d001e
 int layout custom_league_table 0x7f0d001f
 int layout custom_logo_actionbar 0x7f0d0020
@@ -3453,6 +3459,7 @@ int style Widget_MaterialComponents_Toolbar_PrimarySurface 0x7f1302ce
 int style Widget_MaterialComponents_Toolbar_Surface 0x7f1302cf
 int style Widget_MaterialComponents_Tooltip 0x7f1302d0
 int style Widget_Support_CoordinatorLayout 0x7f1302d1
+int style splashScreenTheme 0x7f1302d2
 int[] styleable ActionBar { 0x7f040043, 0x7f04004a, 0x7f04004b, 0x7f0400ed, 0x7f0400ee, 0x7f0400ef, 0x7f0400f0, 0x7f0400f1, 0x7f0400f2, 0x7f040119, 0x7f04012e, 0x7f04012f, 0x7f040147, 0x7f0401a1, 0x7f0401a8, 0x7f0401ae, 0x7f0401af, 0x7f0401b2, 0x7f0401c3, 0x7f0401d5, 0x7f04024a, 0x7f0402a2, 0x7f0402d7, 0x7f0402de, 0x7f0402df, 0x7f04033e, 0x7f040342, 0x7f0403ac, 0x7f0403b8 }
 int styleable ActionBar_background 0
 int styleable ActionBar_backgroundSplit 1
