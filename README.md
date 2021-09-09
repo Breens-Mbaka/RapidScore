@@ -1,4 +1,4 @@
-<p align="left">
+<p align="center">
   <img src="/images/swiftscorelogo.png" width="40%" height="40%"/>
 </p>
 
