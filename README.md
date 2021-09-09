@@ -53,6 +53,6 @@ A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit,
 <img src="/images/topscorers.png" width="40%"/>
 </p>
 
-[comment]: <> (## Demo)
+## Demo)
 
-[comment]: <> (<img src="/images/swiftscoredemo.png" width="40%"/>)
+<img src="/images/swiftscoredemo.gif" width="40%"/>
