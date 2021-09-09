@@ -47,7 +47,6 @@ A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit,
 ## Screenshots
 
   <p align="center">
-<img src="/images/splashscreen.png" width="40%"/>
 <img src="/images/upcomingmatches.png" width="40%"/> 
 <img src="/images/pastscores.png" width="40%"/> 
 <img src="/images/leaguetable.png" width="40%"/>
