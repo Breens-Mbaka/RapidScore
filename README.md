@@ -6,6 +6,20 @@
 
 A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit, Coroutines and Navigation Components
 
+## Demo
+
+![5mfwtt](https://user-images.githubusercontent.com/72180010/132766680-472fb92a-e321-4058-8815-ed7f84d331c5.gif)
+
+
+## Screenshots
+
+<p align="left">
+<img src="/images/upcomingmatches.png" width="30%" height="30%"/> 
+<img src="/images/pastscores.png" width="30%" height="30%"/> 
+<img src="/images/leaguetable.png" width="30%" height="30%"/>
+<img src="/images/topscorers.png" width="30%" height="30%"/>
+</p>
+
 ## API Reference
 
 #### Get upcoming matches
@@ -43,18 +57,22 @@ A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit,
 | `l`      | `string` | **Required**. League Id e.g 1980 for Premier League |
 | `s`      | `string` | **Required**. League Season Id e.g 2021-2022 |
 
+## Lessons Learned
 
-## Demo
+- Software architecture makes it easier to scale, test and maintain an app. The way MVVM architectue principle is on separation of concerns which prevents tight coupling
 
-![5mfwtt](https://user-images.githubusercontent.com/72180010/132766680-472fb92a-e321-4058-8815-ed7f84d331c5.gif)
+- Perfomance heavy tasks like local database  and Networking operations should be done in the background thread to prevent blocking the main thread. This is where coroutines comes in to prevent memory leaks and increase app's responsive perfomance
 
+- Recommended to use one activity and fragments that just swap in and out of the fragment container. Navigation components helped me to easily create navigation process in my app and how data can be transferred. Fragments are also lightweight than activities ans this improves app perfomance
 
-## Screenshots
+- Learnt how to communicate to a remote data source and take the data and manipulate it to my fitting. Retrofit made this networking tasks very effecient with little work done on my side
 
-<p align="left">
-<img src="/images/upcomingmatches.png" width="30%" height="30%"/> 
-<img src="/images/pastscores.png" width="30%" height="30%"/> 
-<img src="/images/leaguetable.png" width="30%" height="30%"/>
-<img src="/images/topscorers.png" width="30%" height="30%"/>
-</p>
+## Roadmap
 
+- Add more leagues i.e La Liga, Ligue 1
+
+- Intergrate offline first functionality
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
