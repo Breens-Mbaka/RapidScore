@@ -6,8 +6,6 @@ class Constants {
 
         const val BASE_URL2 = "https://www.thesportsdb.com/"
 
-        const val API_KEY = "33f533f0-0729-11ec-83f8-6557369cf734"
-
         const val PL_ID = "4328"
 
         const val PL_SEASON = "2021-2022"

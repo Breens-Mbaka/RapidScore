@@ -1,6 +1,5 @@
 package com.example.swiftscore.adapters
 
-import android.graphics.drawable.PictureDrawable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,12 +7,9 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.bumptech.glide.RequestBuilder
 import com.example.swiftscore.R
 import com.example.swiftscore.models.standingsmodel.Table
-import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou
 import kotlinx.android.synthetic.main.custom_league_table.view.*
-import kotlinx.android.synthetic.main.custom_upcoming_matches.view.*
 
 class LeagueTableAdapter : RecyclerView.Adapter<LeagueTableAdapter.LeagueTableViewHolder>() {
     inner class LeagueTableViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
@@ -43,7 +39,7 @@ class LeagueTableAdapter : RecyclerView.Adapter<LeagueTableAdapter.LeagueTableVi
         val standing = differ.currentList[position]
         holder.itemView.apply {
             val rank = Integer.parseInt(standing.intRank)
-            if ( rank < 10) {
+            if (rank < 10) {
                 var position = "0$rank"
                 teamPosition.text = position
             } else {

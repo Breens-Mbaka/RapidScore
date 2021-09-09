@@ -11,8 +11,8 @@ import com.example.swiftscore.R
 import com.example.swiftscore.models.upcomingmatchesmodel.Table
 import kotlinx.android.synthetic.main.custom_upcoming_matches.view.*
 
-class UpcomingMatchesAdapter : RecyclerView.Adapter<UpcomingMatchesAdapter.MatchesViewHolder>(){
-    inner class MatchesViewHolder(itemView:  View): RecyclerView.ViewHolder(itemView)
+class UpcomingMatchesAdapter : RecyclerView.Adapter<UpcomingMatchesAdapter.MatchesViewHolder>() {
+    inner class MatchesViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
 
     private val differCallback = object : DiffUtil.ItemCallback<Table>() {
         override fun areItemsTheSame(oldItem: Table, newItem: Table): Boolean {
@@ -20,7 +20,7 @@ class UpcomingMatchesAdapter : RecyclerView.Adapter<UpcomingMatchesAdapter.Match
         }
 
         override fun areContentsTheSame(oldItem: Table, newItem: Table): Boolean {
-            return  oldItem == newItem
+            return oldItem == newItem
         }
     }
 
@@ -44,6 +44,11 @@ class UpcomingMatchesAdapter : RecyclerView.Adapter<UpcomingMatchesAdapter.Match
             Glide.with(this).load(match.away_team.logo).into(awayTeamCrest)
             tvAwayTeam.text = match.away_team.short_code
             tvSchedule.text = match.match_start
+            if(match.status_code == 3) {
+                ftScore.text = match.stats.ft_score as CharSequence?
+            } else {
+                ftScore.text = ""
+            }
         }
     }
 

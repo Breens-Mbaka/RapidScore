@@ -6,11 +6,12 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.swiftscore.BuildConfig
+import com.example.swiftscore.BuildConfig.API_KEY
 import com.example.swiftscore.R
 import com.example.swiftscore.adapters.UpcomingMatchesAdapter
 import com.example.swiftscore.ui.HomeActivity
 import com.example.swiftscore.ui.MatchesViewModel
-import com.example.swiftscore.util.Constants.Companion.API_KEY
 import com.example.swiftscore.util.Constants.Companion.MATCHDAY_10_FROM_DATE
 import com.example.swiftscore.util.Constants.Companion.MATCHDAY_10_START_DATE
 import com.example.swiftscore.util.Constants.Companion.MATCHDAY_11_FROM_DATE

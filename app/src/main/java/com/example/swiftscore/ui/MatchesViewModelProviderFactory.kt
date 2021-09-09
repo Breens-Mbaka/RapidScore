@@ -6,7 +6,7 @@ import com.example.swiftscore.repository.MatchesRepository
 
 class MatchesViewModelProviderFactory(
     val matchesRepository: MatchesRepository
-) : ViewModelProvider.Factory{
+) : ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         return MatchesViewModel(matchesRepository) as T
     }

@@ -7,8 +7,13 @@ import com.example.swiftscore.models.upcomingmatchesmodel.UpcomingMatchesRespons
 import retrofit2.Response
 
 class MatchesRepository {
-    suspend fun getUpcomingMatches(apiKey: String, seasonId: String, dateFrom: String,dateTo: String): Response<UpcomingMatchesResponse> {
-        return RetrofitInstance.api.getUpcomingMatches(apiKey,seasonId, dateFrom, dateTo)
+    suspend fun getUpcomingMatches(
+        apiKey: String,
+        seasonId: String,
+        dateFrom: String,
+        dateTo: String
+    ): Response<UpcomingMatchesResponse> {
+        return RetrofitInstance.api.getUpcomingMatches(apiKey, seasonId, dateFrom, dateTo)
     }
 
     suspend fun getTopScorers(apiKey: String, seasonId: String): Response<TopScorersResponse> {

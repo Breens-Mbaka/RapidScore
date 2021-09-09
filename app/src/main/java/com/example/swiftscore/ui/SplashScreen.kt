@@ -1,7 +1,7 @@
 package com.example.swiftscore.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.swiftscore.R
 
 class SplashScreen : AppCompatActivity() {
