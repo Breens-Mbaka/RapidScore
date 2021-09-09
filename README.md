@@ -1,4 +1,4 @@
-<p align="center">
+<p align="left">
   <img src="/images/swiftscorelogo.png" width="40%" height="40%"/>
 </p>
 
@@ -51,7 +51,7 @@ A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit,
 
 ## Screenshots
 
-  <p align="center">
+<p align="left">
 <img src="/images/upcomingmatches.png" width="20%" height="20%"/> 
 <img src="/images/pastscores.png" width="20%" height="20%"/> 
 <img src="/images/leaguetable.png" width="20%" height="20%"/>
