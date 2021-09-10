@@ -23,7 +23,7 @@ class HomeActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home)
 
         val matchesRepository = MatchesRepository()
-        val viewModelProviderFactory = MatchesViewModelProviderFactory(matchesRepository)
+        val viewModelProviderFactory = MatchesViewModelProviderFactory(application,matchesRepository)
         viewModel =
             ViewModelProvider(this, viewModelProviderFactory).get(MatchesViewModel::class.java)
 

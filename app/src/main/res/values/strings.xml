@@ -47,4 +47,6 @@
     <string name="tvMatchday_36">Matchday 36</string>
     <string name="tvMatchday_37">Matchday 37</string>
     <string name="tvMatchday_38">Matchday 38</string>
+    <string name="tv_Availability">Currently Not Available</string>
+    <string name="tv_Later">Try again later</string>
 </resources>

@@ -50,87 +50,87 @@ class Constants {
         const val MATCHDAY_10_FROM_DATE = "2021-11-01"
 
         const val MATCHDAY_11_START_DATE = "2021-11-06"
-        const val MATCHDAY_11_FROM_DATE = "2021-11-06"
+        const val MATCHDAY_11_FROM_DATE = "2021-11-07"
 
         const val MATCHDAY_12_START_DATE = "2021-11-20"
-        const val MATCHDAY_12_FROM_DATE = "2021-11-20"
+        const val MATCHDAY_12_FROM_DATE = "2021-11-21"
 
         const val MATCHDAY_13_START_DATE = "2021-11-27"
-        const val MATCHDAY_13_FROM_DATE = "2021-11-27"
+        const val MATCHDAY_13_FROM_DATE = "2021-11-28"
 
         const val MATCHDAY_14_START_DATE = "2021-11-30"
         const val MATCHDAY_14_FROM_DATE = "2021-12-01"
 
         const val MATCHDAY_15_START_DATE = "2021-12-04"
-        const val MATCHDAY_15_FROM_DATE = "2021-12-04"
+        const val MATCHDAY_15_FROM_DATE = "2021-12-05"
 
         const val MATCHDAY_16_START_DATE = "2021-12-11"
-        const val MATCHDAY_16_FROM_DATE = "2021-12-11"
+        const val MATCHDAY_16_FROM_DATE = "2021-12-12"
 
         const val MATCHDAY_17_START_DATE = "2021-12-14"
         const val MATCHDAY_17_FROM_DATE = "2021-12-15"
 
         const val MATCHDAY_18_START_DATE = "2021-12-18"
-        const val MATCHDAY_18_FROM_DATE = "2021-12-18"
+        const val MATCHDAY_18_FROM_DATE = "2021-12-19"
 
         const val MATCHDAY_19_START_DATE = "2021-12-26"
-        const val MATCHDAY_19_FROM_DATE = "2021-12-26"
+        const val MATCHDAY_19_FROM_DATE = "2021-12-27"
 
         const val MATCHDAY_20_START_DATE = "2021-12-28"
-        const val MATCHDAY_20_FROM_DATE = "2021-12-28"
+        const val MATCHDAY_20_FROM_DATE = "2021-12-29"
 
         const val MATCHDAY_21_START_DATE = "2022-01-01"
-        const val MATCHDAY_21_FROM_DATE = "2022-01-01"
+        const val MATCHDAY_21_FROM_DATE = "2022-01-02"
 
-        const val MATCHDAY_22_START_DATE = "2022-01-15"
-        const val MATCHDAY_22_FROM_DATE = "2022-01-15"
+        const val MATCHDAY_22_START_DATE = "2022-01-02"
+        const val MATCHDAY_22_FROM_DATE = "2022-01-03"
 
         const val MATCHDAY_23_START_DATE = "2022-01-22"
-        const val MATCHDAY_23_FROM_DATE = "2022-01-22"
+        const val MATCHDAY_23_FROM_DATE = "2022-01-23"
 
         const val MATCHDAY_24_START_DATE = "2022-02-08"
         const val MATCHDAY_24_FROM_DATE = "2022-02-09"
 
         const val MATCHDAY_25_START_DATE = "2022-02-12"
-        const val MATCHDAY_25_FROM_DATE = "2022-02-12"
+        const val MATCHDAY_25_FROM_DATE = "2022-02-13"
 
         const val MATCHDAY_26_START_DATE = "2022-02-19"
-        const val MATCHDAY_26_FROM_DATE = "2022-02-19"
+        const val MATCHDAY_26_FROM_DATE = "2022-02-20"
 
         const val MATCHDAY_27_START_DATE = "2022-02-26"
-        const val MATCHDAY_27_FROM_DATE = "2022-02-26"
+        const val MATCHDAY_27_FROM_DATE = "2022-02-27"
 
         const val MATCHDAY_28_START_DATE = "2022-03-05"
-        const val MATCHDAY_28_FROM_DATE = "2022-03-05"
+        const val MATCHDAY_28_FROM_DATE = "2022-03-06"
 
         const val MATCHDAY_29_START_DATE = "2022-03-12"
-        const val MATCHDAY_29_FROM_DATE = "2022-03-12"
+        const val MATCHDAY_29_FROM_DATE = "2022-03-13"
 
         const val MATCHDAY_30_START_DATE = "2022-03-19"
-        const val MATCHDAY_30_FROM_DATE = "2022-03-19"
+        const val MATCHDAY_30_FROM_DATE = "2022-03-20"
 
         const val MATCHDAY_31_START_DATE = "2022-04-02"
-        const val MATCHDAY_31_FROM_DATE = "2022-04-02"
+        const val MATCHDAY_31_FROM_DATE = "2022-04-03"
 
         const val MATCHDAY_32_START_DATE = "2022-04-09"
-        const val MATCHDAY_32_FROM_DATE = "2022-04-09"
+        const val MATCHDAY_32_FROM_DATE = "2022-04-10"
 
         const val MATCHDAY_33_START_DATE = "2022-04-16"
-        const val MATCHDAY_33_FROM_DATE = "2022-04-16"
+        const val MATCHDAY_33_FROM_DATE = "2022-04-17"
 
         const val MATCHDAY_34_START_DATE = "2022-04-23"
-        const val MATCHDAY_34_FROM_DATE = "2022-04-223"
+        const val MATCHDAY_34_FROM_DATE = "2022-04-24"
 
         const val MATCHDAY_35_START_DATE = "2022-04-30"
-        const val MATCHDAY_35_FROM_DATE = "2022-04-30"
+        const val MATCHDAY_35_FROM_DATE = "2022-04-31"
 
         const val MATCHDAY_36_START_DATE = "2022-05-07"
-        const val MATCHDAY_36_FROM_DATE = "2022-05-07"
+        const val MATCHDAY_36_FROM_DATE = "2022-05-08"
 
         const val MATCHDAY_37_START_DATE = "2022-05-15"
-        const val MATCHDAY_37_FROM_DATE = "2022-05-15"
+        const val MATCHDAY_37_FROM_DATE = "2022-05-16"
 
         const val MATCHDAY_38_START_DATE = "2022-05-22"
-        const val MATCHDAY_38_FROM_DATE = "2022-05-22"
+        const val MATCHDAY_38_FROM_DATE = "2022-05-23"
     }
 }

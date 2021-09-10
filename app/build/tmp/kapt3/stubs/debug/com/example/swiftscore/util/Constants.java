@@ -60,15 +60,15 @@ public final class Constants {
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_11_START_DATE = "2021-11-06";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_11_FROM_DATE = "2021-11-06";
+    public static final java.lang.String MATCHDAY_11_FROM_DATE = "2021-11-07";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_12_START_DATE = "2021-11-20";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_12_FROM_DATE = "2021-11-20";
+    public static final java.lang.String MATCHDAY_12_FROM_DATE = "2021-11-21";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_13_START_DATE = "2021-11-27";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_13_FROM_DATE = "2021-11-27";
+    public static final java.lang.String MATCHDAY_13_FROM_DATE = "2021-11-28";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_14_START_DATE = "2021-11-30";
     @org.jetbrains.annotations.NotNull()
@@ -76,11 +76,11 @@ public final class Constants {
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_15_START_DATE = "2021-12-04";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_15_FROM_DATE = "2021-12-04";
+    public static final java.lang.String MATCHDAY_15_FROM_DATE = "2021-12-05";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_16_START_DATE = "2021-12-11";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_16_FROM_DATE = "2021-12-11";
+    public static final java.lang.String MATCHDAY_16_FROM_DATE = "2021-12-12";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_17_START_DATE = "2021-12-14";
     @org.jetbrains.annotations.NotNull()
@@ -88,27 +88,27 @@ public final class Constants {
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_18_START_DATE = "2021-12-18";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_18_FROM_DATE = "2021-12-18";
+    public static final java.lang.String MATCHDAY_18_FROM_DATE = "2021-12-19";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_19_START_DATE = "2021-12-26";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_19_FROM_DATE = "2021-12-26";
+    public static final java.lang.String MATCHDAY_19_FROM_DATE = "2021-12-27";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_20_START_DATE = "2021-12-28";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_20_FROM_DATE = "2021-12-28";
+    public static final java.lang.String MATCHDAY_20_FROM_DATE = "2021-12-29";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_21_START_DATE = "2022-01-01";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_21_FROM_DATE = "2022-01-01";
+    public static final java.lang.String MATCHDAY_21_FROM_DATE = "2022-01-02";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_22_START_DATE = "2022-01-15";
+    public static final java.lang.String MATCHDAY_22_START_DATE = "2022-01-02";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_22_FROM_DATE = "2022-01-15";
+    public static final java.lang.String MATCHDAY_22_FROM_DATE = "2022-01-03";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_23_START_DATE = "2022-01-22";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_23_FROM_DATE = "2022-01-22";
+    public static final java.lang.String MATCHDAY_23_FROM_DATE = "2022-01-23";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_24_START_DATE = "2022-02-08";
     @org.jetbrains.annotations.NotNull()
@@ -116,59 +116,59 @@ public final class Constants {
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_25_START_DATE = "2022-02-12";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_25_FROM_DATE = "2022-02-12";
+    public static final java.lang.String MATCHDAY_25_FROM_DATE = "2022-02-13";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_26_START_DATE = "2022-02-19";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_26_FROM_DATE = "2022-02-19";
+    public static final java.lang.String MATCHDAY_26_FROM_DATE = "2022-02-20";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_27_START_DATE = "2022-02-26";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_27_FROM_DATE = "2022-02-26";
+    public static final java.lang.String MATCHDAY_27_FROM_DATE = "2022-02-27";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_28_START_DATE = "2022-03-05";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_28_FROM_DATE = "2022-03-05";
+    public static final java.lang.String MATCHDAY_28_FROM_DATE = "2022-03-06";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_29_START_DATE = "2022-03-12";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_29_FROM_DATE = "2022-03-12";
+    public static final java.lang.String MATCHDAY_29_FROM_DATE = "2022-03-13";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_30_START_DATE = "2022-03-19";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_30_FROM_DATE = "2022-03-19";
+    public static final java.lang.String MATCHDAY_30_FROM_DATE = "2022-03-20";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_31_START_DATE = "2022-04-02";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_31_FROM_DATE = "2022-04-02";
+    public static final java.lang.String MATCHDAY_31_FROM_DATE = "2022-04-03";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_32_START_DATE = "2022-04-09";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_32_FROM_DATE = "2022-04-09";
+    public static final java.lang.String MATCHDAY_32_FROM_DATE = "2022-04-10";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_33_START_DATE = "2022-04-16";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_33_FROM_DATE = "2022-04-16";
+    public static final java.lang.String MATCHDAY_33_FROM_DATE = "2022-04-17";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_34_START_DATE = "2022-04-23";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_34_FROM_DATE = "2022-04-223";
+    public static final java.lang.String MATCHDAY_34_FROM_DATE = "2022-04-24";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_35_START_DATE = "2022-04-30";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_35_FROM_DATE = "2022-04-30";
+    public static final java.lang.String MATCHDAY_35_FROM_DATE = "2022-04-31";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_36_START_DATE = "2022-05-07";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_36_FROM_DATE = "2022-05-07";
+    public static final java.lang.String MATCHDAY_36_FROM_DATE = "2022-05-08";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_37_START_DATE = "2022-05-15";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_37_FROM_DATE = "2022-05-15";
+    public static final java.lang.String MATCHDAY_37_FROM_DATE = "2022-05-16";
     @org.jetbrains.annotations.NotNull()
     public static final java.lang.String MATCHDAY_38_START_DATE = "2022-05-22";
     @org.jetbrains.annotations.NotNull()
-    public static final java.lang.String MATCHDAY_38_FROM_DATE = "2022-05-22";
+    public static final java.lang.String MATCHDAY_38_FROM_DATE = "2022-05-23";
     
     public Constants() {
         super();

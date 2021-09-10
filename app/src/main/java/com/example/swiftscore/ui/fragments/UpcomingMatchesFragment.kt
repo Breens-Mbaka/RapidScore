@@ -1,17 +1,16 @@
 package com.example.swiftscore.ui.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.swiftscore.BuildConfig
 import com.example.swiftscore.BuildConfig.API_KEY
 import com.example.swiftscore.R
 import com.example.swiftscore.adapters.UpcomingMatchesAdapter
 import com.example.swiftscore.ui.HomeActivity
 import com.example.swiftscore.ui.MatchesViewModel
+import com.example.swiftscore.util.Constants.Companion.CURRENT_DATE
 import com.example.swiftscore.util.Constants.Companion.MATCHDAY_10_FROM_DATE
 import com.example.swiftscore.util.Constants.Companion.MATCHDAY_10_START_DATE
 import com.example.swiftscore.util.Constants.Companion.MATCHDAY_11_FROM_DATE
@@ -102,19 +101,52 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
         super.onViewCreated(view, savedInstanceState)
         viewModel = (activity as HomeActivity).viewModel
         setupRecyclerView()
+        observeUpcomingMatches()
+        filterMatchDays()
+    }
 
+    private fun observeUpcomingMatches() {
         viewModel.upcomingMatches.observe(viewLifecycleOwner, Observer { response ->
             when (response) {
                 is Resource.Success -> {
                     hideProgressBar()
                     response.data?.let { upcomingMatchesResponse ->
+                        iconConnection.visibility = View.INVISIBLE
+                        tvPoorConnection.visibility = View.INVISIBLE
+                        tvCheckConnection.visibility = View.INVISIBLE
+                        tvTryAgain.visibility = View.INVISIBLE
+                        btnRetry.visibility = View.INVISIBLE
+                        imgNoData.visibility = View.INVISIBLE
+                        tvAvailability.visibility = View.INVISIBLE
+                        tvLater.visibility = View.INVISIBLE
+                        rvUpcomingMatches.visibility = View.VISIBLE
                         upcomingMatchesAdapter.differ.submitList(upcomingMatchesResponse.data)
                     }
                 }
                 is Resource.Error -> {
                     hideProgressBar()
                     response.message?.let { message ->
-                        Log.e(TAG, "An error occured: $message")
+                        if (message == "") {
+                            imgNoData.visibility = View.VISIBLE
+                            tvAvailability.visibility = View.VISIBLE
+                            tvLater.visibility = View.VISIBLE
+                            rvUpcomingMatches.visibility = View.INVISIBLE
+                        } else {
+                            iconConnection.visibility = View.VISIBLE
+                            tvPoorConnection.visibility = View.VISIBLE
+                            tvCheckConnection.visibility = View.VISIBLE
+                            tvTryAgain.visibility = View.VISIBLE
+                            btnRetry.visibility = View.VISIBLE
+                            rvUpcomingMatches.visibility = View.INVISIBLE
+                            btnRetry.setOnClickListener {
+                                viewModel.getUpcomingMatches(
+                                    API_KEY,
+                                    SEASON_ID,
+                                    CURRENT_DATE,
+                                    MATCHDAY_38_FROM_DATE
+                                )
+                            }
+                        }
                     }
                 }
                 is Resource.Loading -> {
@@ -122,7 +154,6 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 }
             }
         })
-        filterMatchDays()
     }
 
     private fun filterMatchDays() {
