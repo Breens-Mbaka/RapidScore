@@ -1,23 +1,25 @@
 <p align="center">
-  <img src="/images/logo.svg" width="40%" height="40%"/>
+  <img src="/images/swiftscorelogo.png" width="40%" height="40%"/>
 </p>
 
 # SwiftScore
 
 A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit, Coroutines and Navigation Components
 
-## Screenshots
-
-<p align="center">
-<img src="/images/upcomingmatches.png" width="40%"/> 
-<img src="/images/pastscores.png" width="40%"/> 
-<img src="/images/leaguetable.png" width="40%"/>
-<img src="/images/topscorers.png" width="40%"/>
-</p>
-
 ## Demo
 
-<img src="/images/swiftscoredemo.png" width="40%"/>
+![5mfwtt](https://user-images.githubusercontent.com/72180010/132879117-fa102f6c-8280-45e8-a244-f7d048ccf693.gif)
+
+
+## Screenshots
+
+
+<p align="left">
+<img src="/images/upcomingmatches.png" width="30%"/> 
+<img src="/images/pastscores.png" width="30%"/> 
+<img src="/images/leaguetable.png" width="30%"/>
+<img src="/images/topscorers.png" width="30%"/>
+</p>
 
 ## API Reference
 
