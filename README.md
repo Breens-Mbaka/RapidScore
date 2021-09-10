@@ -58,4 +58,28 @@ A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit,
 | `l`      | `string` | **Required**. League Id e.g 1980 for Premier League |
 | `s`      | `string` | **Required**. League Season Id e.g 2021-2022 |
 
+## Lesssons Learnt
 
+- Always perform heavy tasks like local database and network operations on the background thread. This is to prevent blocking the main thread, I used Retrofit for network operation in support of Coroutines to perform the task in the background thread.
+
+- Navigation components made it easy for me to build my app's navigation system. Learnt best practices like having one activity and multiple fragments that can be swaped in and out of the fragment container, this improved app responsiveness since fragments are lightweight
+
+- Learnt how to create UI designs on Figma this really came in handy since without me knowing I was always thinking on the architecture of the app and how the data will flow
+
+
+## Roadmap
+```
+  Intergrate offline caching using Room local database
+```
+```
+  Add multiple leagues like La Liga, Serie A, Ligue 1 etc
+```
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+
+## Support
+
+For support, email mbakabreens@gmail.com
