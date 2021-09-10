@@ -13,11 +13,11 @@ A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit,
 
 ## Screenshots
 
-<p align="center">
-<img src="/images/upcomingmatches.png" width="40%"/> 
-<img src="/images/pastscores.png" width="40%"/> 
-<img src="/images/leaguetable.png" width="40%"/>
-<img src="/images/topscorers.png" width="40%"/>
+<p align="left">
+<img src="/images/upcomingmatches.png" width="30%"/> 
+<img src="/images/pastscores.png" width="30%"/> 
+<img src="/images/leaguetable.png" width="30%"/>
+<img src="/images/topscorers.png" width="30%"/>
 </p>
 
 ## API Reference
