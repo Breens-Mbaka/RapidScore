@@ -6,6 +6,19 @@
 
 A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit, Coroutines and Navigation Components
 
+## Screenshots
+
+<p align="center">
+<img src="/images/upcomingmatches.png" width="40%"/> 
+<img src="/images/pastscores.png" width="40%"/> 
+<img src="/images/leaguetable.png" width="40%"/>
+<img src="/images/topscorers.png" width="40%"/>
+</p>
+
+## Demo
+
+<img src="/images/swiftscoredemo.png" width="40%"/>
+
 ## API Reference
 
 #### Get upcoming matches
@@ -44,15 +57,3 @@ A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit,
 | `s`      | `string` | **Required**. League Season Id e.g 2021-2022 |
 
 
-## Screenshots
-
-  <p align="center">
-<img src="/images/upcomingmatches.png" width="40%"/> 
-<img src="/images/pastscores.png" width="40%"/> 
-<img src="/images/leaguetable.png" width="40%"/>
-<img src="/images/topscorers.png" width="40%"/>
-</p>
-
-[comment]: <> (## Demo)
-
-[comment]: <> (<img src="/images/swiftscoredemo.png" width="40%"/>)
