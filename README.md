@@ -6,6 +6,11 @@
 
 A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit, Coroutines and Navigation Components
 
+## Demo
+
+![5mfwtt](https://user-images.githubusercontent.com/72180010/132879117-fa102f6c-8280-45e8-a244-f7d048ccf693.gif)
+
+
 ## Screenshots
 
 <p align="center">
@@ -14,10 +19,6 @@ A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit,
 <img src="/images/leaguetable.png" width="40%"/>
 <img src="/images/topscorers.png" width="40%"/>
 </p>
-
-## Demo
-
-<img src="/images/swiftscoredemo.png" width="40%"/>
 
 ## API Reference
 
