@@ -1,6 +1,6 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-3    package="com.example.swiftscore"
+3    package="com.swift.swiftscore"
 4    android:versionCode="1"
 5    android:versionName="1.0" >
 6
@@ -19,8 +19,8 @@
 13
 14    <application
 14-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:8:5-28:19
-15        android:name="com.example.swiftscore.MatchesApplication"
-15-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-43
+15        android:name="com.swift.swiftscore.MatchesApplication"
+15-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-63
 16        android:allowBackup="true"
 16-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:10:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -39,7 +39,7 @@
 24-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:15:9-49
 25        <activity
 25-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:16:9-24:20
-26            android:name="com.example.swiftscore.ui.HomeActivity"
+26            android:name="com.swift.swiftscore.ui.HomeActivity"
 26-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:17:13-44
 27            android:exported="true" >
 27-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:18:13-36

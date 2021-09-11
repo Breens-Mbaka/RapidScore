@@ -1,2 +1,2 @@
-com/example/swiftscore/BuildConfig.java
- com.example.swiftscore.BuildConfig
+com/swift/swiftscore/BuildConfig.java
+ com.swift.swiftscore.BuildConfig

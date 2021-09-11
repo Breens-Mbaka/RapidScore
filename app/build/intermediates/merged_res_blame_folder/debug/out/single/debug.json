@@ -12,12 +12,12 @@
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/drawable/swiftlogo.png"
     },
     {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/font_nunito_sans_extrabold.xml.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/font/nunito_sans_extrabold.xml"
-    },
-    {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/font_nunito_sans_extrabold.xml.flat",
+        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/font/nunito_sans_extrabold.xml"
     },
     {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/anim_slide_out_left.xml.flat",
@@ -96,12 +96,12 @@
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/drawable/standings_selector.xml"
     },
     {
-        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
-        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
-    },
-    {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/drawable_ic_no_data_amico.xml.flat",
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/drawable/ic_no_data_amico.xml"
+    },
+    {
+        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/mipmap-mdpi/ic_launcher_round.png"
     },
     {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/drawable_matches_selector.xml.flat",

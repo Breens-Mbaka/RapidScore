@@ -11,7 +11,7 @@ android {
     compileSdk 30
 
     defaultConfig {
-        applicationId "com.example.swiftscore"
+        applicationId "com.swift.swiftscore"
         minSdk 21
         targetSdk 30
         versionCode 1

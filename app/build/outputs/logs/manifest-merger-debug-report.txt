@@ -66,7 +66,7 @@ INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/Android
 INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:2:1-30:12
 INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:2:1-30:12
 	package
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:3:5-37
+		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:3:5-35
 		INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
 		INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
 	android:versionName
@@ -122,8 +122,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/breen
 	android:theme
 		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:15:9-49
 	android:name
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-43
-activity#com.example.swiftscore.ui.HomeActivity
+		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-63
+activity#com.swift.swiftscore.ui.HomeActivity
 ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:16:9-24:20
 	android:exported
 		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:18:13-36
