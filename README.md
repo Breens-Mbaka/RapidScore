@@ -2,7 +2,7 @@
   <img src="/images/swiftscorelogo.png" width="40%" height="40%"/>
 </p>
 
-# SwiftScore
+# SwiftScore(Coming Soon to Playstore)
 
 A football stats and livescore app built with Kotlin,MVVM architecture,Retrofit, Coroutines and Navigation Components
 
