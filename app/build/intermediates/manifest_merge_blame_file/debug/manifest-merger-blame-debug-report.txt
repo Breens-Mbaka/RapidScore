@@ -19,8 +19,8 @@
 13
 14    <application
 14-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:8:5-28:19
-15        android:name="com.swift.swiftscore.MatchesApplication"
-15-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-63
+15        android:name="com.swift.swiftscore.util.MatchesApplication"
+15-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-68
 16        android:allowBackup="true"
 16-->/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:10:9-35
 17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"

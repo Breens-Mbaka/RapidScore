@@ -10,21 +10,25 @@ import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.swift.swiftscore.R
 import com.swift.swiftscore.repository.MatchesRepository
+import com.swift.swiftscore.repository.StandingsRepository
+import com.swift.swiftscore.repository.TopScorersRepository
+import com.swift.swiftscore.ui.viewmodels.*
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
 
-    lateinit var viewModel: MatchesViewModel
+    lateinit var matchesViewModel: MatchesViewModel
+    lateinit var standingsViewModel: StandingsViewModel
+    lateinit var topScorersModel: TopScorersViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setTheme(R.style.Theme_SwiftScore)
         setContentView(R.layout.activity_home)
 
-        val matchesRepository = MatchesRepository()
-        val viewModelProviderFactory = MatchesViewModelProviderFactory(application,matchesRepository)
-        viewModel =
-            ViewModelProvider(this, viewModelProviderFactory).get(MatchesViewModel::class.java)
+        initiateMatchesViewModel()
+        initiateStandingsViewModel()
+        initiateTopScorersViewModel()
 
         setLogoInActionBar()
         val navHostFragment =
@@ -34,6 +38,29 @@ class HomeActivity : AppCompatActivity() {
         bottomNavigationView.itemIconTintList = null
     }
 
+    private fun initiateMatchesViewModel() {
+        val matchesRepository = MatchesRepository()
+        val viewModelProviderFactory =
+            MatchesViewModelProviderFactory(application, matchesRepository)
+        matchesViewModel =
+            ViewModelProvider(this, viewModelProviderFactory).get(MatchesViewModel::class.java)
+    }
+
+    private fun initiateStandingsViewModel() {
+        val standingsRepository = StandingsRepository()
+        val viewModelProviderFactory =
+            StandingsViewModelProviderFactory(application, standingsRepository)
+        standingsViewModel =
+            ViewModelProvider(this, viewModelProviderFactory).get(StandingsViewModel::class.java)
+    }
+
+    private fun initiateTopScorersViewModel() {
+        val topScorersViewModelRepository = TopScorersRepository()
+        val viewModelProviderFactory =
+            TopScorersViewModelProviderFactory(application, topScorersViewModelRepository)
+        topScorersModel =
+            ViewModelProvider(this, viewModelProviderFactory).get(TopScorersViewModel::class.java)
+    }
 
     private fun setLogoInActionBar() {
         val actionBar = supportActionBar

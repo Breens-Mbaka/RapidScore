@@ -1,4 +1,4 @@
-package com.swift.swiftscore.ui
+package com.swift.swiftscore.ui.viewmodels
 
 import android.app.Application
 import androidx.lifecycle.ViewModel
@@ -10,6 +10,6 @@ class MatchesViewModelProviderFactory(
     val matchesRepository: MatchesRepository
 ) : ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-        return MatchesViewModel(app,matchesRepository) as T
+        return MatchesViewModel(app, matchesRepository) as T
     }
 }

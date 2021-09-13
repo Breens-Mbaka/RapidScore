@@ -1,4 +1,4 @@
-package com.swift.swiftscore
+package com.swift.swiftscore.util
 
 import android.app.Application
 

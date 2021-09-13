@@ -8,8 +8,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.swift.swiftscore.BuildConfig.API_KEY
 import com.swift.swiftscore.R
 import com.swift.swiftscore.adapters.UpcomingMatchesAdapter
+import com.swift.swiftscore.models.upcomingmatchesmodel.UpcomingMatchesResponse
 import com.swift.swiftscore.ui.HomeActivity
-import com.swift.swiftscore.ui.MatchesViewModel
+import com.swift.swiftscore.ui.viewmodels.MatchesViewModel
 import com.swift.swiftscore.util.Constants.Companion.CURRENT_DATE
 import com.swift.swiftscore.util.Constants.Companion.MATCHDAY_10_FROM_DATE
 import com.swift.swiftscore.util.Constants.Companion.MATCHDAY_10_START_DATE
@@ -99,7 +100,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        viewModel = (activity as HomeActivity).viewModel
+        viewModel = (activity as HomeActivity).matchesViewModel
         setupRecyclerView()
         observeUpcomingMatches()
         filterMatchDays()
@@ -111,42 +112,13 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 is Resource.Success -> {
                     hideProgressBar()
                     response.data?.let { upcomingMatchesResponse ->
-                        iconConnection.visibility = View.INVISIBLE
-                        tvPoorConnection.visibility = View.INVISIBLE
-                        tvCheckConnection.visibility = View.INVISIBLE
-                        tvTryAgain.visibility = View.INVISIBLE
-                        btnRetry.visibility = View.INVISIBLE
-                        imgNoData.visibility = View.INVISIBLE
-                        tvAvailability.visibility = View.INVISIBLE
-                        tvLater.visibility = View.INVISIBLE
-                        rvUpcomingMatches.visibility = View.VISIBLE
-                        upcomingMatchesAdapter.differ.submitList(upcomingMatchesResponse.data)
+                        responseSuccess(upcomingMatchesResponse)
                     }
                 }
                 is Resource.Error -> {
                     hideProgressBar()
                     response.message?.let { message ->
-                        if (message == "") {
-                            imgNoData.visibility = View.VISIBLE
-                            tvAvailability.visibility = View.VISIBLE
-                            tvLater.visibility = View.VISIBLE
-                            rvUpcomingMatches.visibility = View.INVISIBLE
-                        } else {
-                            iconConnection.visibility = View.VISIBLE
-                            tvPoorConnection.visibility = View.VISIBLE
-                            tvCheckConnection.visibility = View.VISIBLE
-                            tvTryAgain.visibility = View.VISIBLE
-                            btnRetry.visibility = View.VISIBLE
-                            rvUpcomingMatches.visibility = View.INVISIBLE
-                            btnRetry.setOnClickListener {
-                                viewModel.getUpcomingMatches(
-                                    API_KEY,
-                                    SEASON_ID,
-                                    CURRENT_DATE,
-                                    MATCHDAY_38_FROM_DATE
-                                )
-                            }
-                        }
+                        responseError(message)
                     }
                 }
                 is Resource.Loading -> {
@@ -154,6 +126,43 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 }
             }
         })
+    }
+
+    private fun responseSuccess(upcomingMatchesResponse: UpcomingMatchesResponse) {
+        iconConnection.visibility = View.INVISIBLE
+        tvPoorConnection.visibility = View.INVISIBLE
+        tvCheckConnection.visibility = View.INVISIBLE
+        tvTryAgain.visibility = View.INVISIBLE
+        btnRetry.visibility = View.INVISIBLE
+        imgNoData.visibility = View.INVISIBLE
+        tvAvailability.visibility = View.INVISIBLE
+        tvLater.visibility = View.INVISIBLE
+        rvUpcomingMatches.visibility = View.VISIBLE
+        upcomingMatchesAdapter.differ.submitList(upcomingMatchesResponse.data)
+    }
+
+    private fun responseError(message: String) {
+        if (message == "") {
+            imgNoData.visibility = View.VISIBLE
+            tvAvailability.visibility = View.VISIBLE
+            tvLater.visibility = View.VISIBLE
+            rvUpcomingMatches.visibility = View.INVISIBLE
+        } else {
+            iconConnection.visibility = View.VISIBLE
+            tvPoorConnection.visibility = View.VISIBLE
+            tvCheckConnection.visibility = View.VISIBLE
+            tvTryAgain.visibility = View.VISIBLE
+            btnRetry.visibility = View.VISIBLE
+            rvUpcomingMatches.visibility = View.INVISIBLE
+            btnRetry.setOnClickListener {
+                viewModel.getUpcomingMatches(
+                    API_KEY,
+                    SEASON_ID,
+                    CURRENT_DATE,
+                    MATCHDAY_38_FROM_DATE
+                )
+            }
+        }
     }
 
     private fun filterMatchDays() {

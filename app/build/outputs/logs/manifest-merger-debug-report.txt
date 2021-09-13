@@ -122,7 +122,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/breen
 	android:theme
 		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:15:9-49
 	android:name
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-63
+		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-68
 activity#com.swift.swiftscore.ui.HomeActivity
 ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:16:9-24:20
 	android:exported
