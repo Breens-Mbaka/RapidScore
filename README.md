@@ -1,5 +1,11 @@
-<p align="center">
+<p align="left">
   <img src="/images/swiftscorelogo.png" width="40%" height="40%"/>
+</p>
+
+<p align="left">
+  <a href="https://play.google.com/store/apps/details?id=com.swift.swiftscore">
+    <img src="/images/googleplaylogo.png" width="40%" height="40%"/>
+  </a>
 </p>
 
 # SwiftScore
