@@ -4,9 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20833333333333334" />
+        <entry key="app/src/main/res/drawable/favourite_selector.xml" value="0.22291666666666668" />
         <entry key="app/src/main/res/drawable/home_selector.xml" value="0.22291666666666668" />
         <entry key="app/src/main/res/drawable/ic_baseline_event_24.xml" value="0.20833333333333334" />
         <entry key="app/src/main/res/drawable/ic_baseline_event_24_black.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/drawable/ic_baseline_favorite_24_black.xml" value="0.22291666666666668" />
+        <entry key="app/src/main/res/drawable/ic_baseline_leaderboard_24.xml" value="0.22291666666666668" />
         <entry key="app/src/main/res/drawable/ic_baseline_leaderboard_24_black.xml" value="0.22291666666666668" />
         <entry key="app/src/main/res/drawable/ic_baseline_table_rows_24_black.xml" value="0.22291666666666668" />
         <entry key="app/src/main/res/drawable/ic_splash_screen.xml" value="0.22291666666666668" />
@@ -21,6 +24,7 @@
         <entry key="app/src/main/res/layout/custom_logo_actionbar.xml" value="0.16574074074074074" />
         <entry key="app/src/main/res/layout/custom_top_scorers.xml" value="0.33" />
         <entry key="app/src/main/res/layout/custom_upcoming_matches.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_favourites.xml" value="0.22" />
         <entry key="app/src/main/res/layout/fragment_league_table.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_top_scorers.xml" value="0.16574074074074074" />
         <entry key="app/src/main/res/layout/fragment_upcoming_matches.xml" value="0.1185064935064935" />

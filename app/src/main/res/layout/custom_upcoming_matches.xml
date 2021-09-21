@@ -21,6 +21,21 @@
             android:layout_height="match_parent"
             android:background="@color/grey">
 
+            <TextView
+                android:id="@+id/homeScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans_extrabold"
+                android:text="1"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvHomeTeam"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.443"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvHomeTeam"
+                app:layout_constraintVertical_bias="0.0" />
+
             <ImageView
                 android:id="@+id/homeTeamCrest"
                 android:layout_width="20dp"
@@ -78,23 +93,39 @@
                 android:text="@string/tv_schedule"
                 android:textColor="@color/green"
                 android:textSize="11sp"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/tvAwayTeam"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvHomeTeam"
                 app:layout_constraintVertical_bias="0.382" />
 
             <TextView
-                android:id="@+id/ftScore"
+                android:id="@+id/time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="100dp"
+                android:layout_marginEnd="16dp"
                 android:fontFamily="@font/nunito_sans_extrabold"
+                android:text="@string/tv_schedule"
+                android:textColor="@color/green"
+                android:textSize="11sp"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvAwayTeam"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvHomeTeam"
+                app:layout_constraintVertical_bias="0.382" />
+
+            <TextView
+                android:id="@+id/awayScore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/nunito_sans_extrabold"
+                android:text="2"
                 android:textColor="@color/white"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/tvSchedule"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@+id/tvAwayTeam"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.442"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.409" />
+                app:layout_constraintTop_toTopOf="@+id/tvAwayTeam" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
