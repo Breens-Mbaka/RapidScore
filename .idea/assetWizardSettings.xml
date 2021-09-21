@@ -23,7 +23,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="file:$USER_HOME$/Android/Sdk/icons/material/materialicons/favorite/baseline_favorite_24.xml" />
+                                      <entry key="url" value="file:$USER_HOME$/Android/Sdk/icons/material/materialicons/filter_alt/baseline_filter_alt_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -33,7 +33,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_baseline_favorite_24_black" />
+                            <entry key="color" value="786868" />
+                            <entry key="outputName" value="ic_baseline_filter_alt_24_grey" />
                             <entry key="sourceFile" value="$USER_HOME$/Downloads/No data-amico.svg" />
                           </map>
                         </option>

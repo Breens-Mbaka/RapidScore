@@ -51,4 +51,8 @@
     <string name="tv_Later">Try again later</string>
     <string name="favourite">Favourite</string>
     <string name="favourites">Favourites</string>
+    <string-array name="premier_league">
+        <item>Premier League</item>
+        <item>Ligue 1</item>
+    </string-array>
 </resources>

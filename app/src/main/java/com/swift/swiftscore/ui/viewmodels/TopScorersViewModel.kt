@@ -12,6 +12,7 @@ import com.swift.swiftscore.BuildConfig.API_KEY
 import com.swift.swiftscore.models.topscorersmodel.TopScorersResponse
 import com.swift.swiftscore.repository.TopScorersRepository
 import com.swift.swiftscore.util.Constants
+import com.swift.swiftscore.util.Constants.Companion.PL_ID_MATCHES
 import com.swift.swiftscore.util.MatchesApplication
 import com.swift.swiftscore.util.Resource
 import kotlinx.coroutines.launch
@@ -25,7 +26,7 @@ class TopScorersViewModel(
     val topScorers: MutableLiveData<Resource<TopScorersResponse>> = MutableLiveData()
 
     init {
-        getTopScorers(API_KEY, Constants.SEASON_ID)
+        getTopScorers(API_KEY, PL_ID_MATCHES)
     }
 
     fun getTopScorers(apiKey: String, seasonId: String) =

@@ -7,10 +7,10 @@ import retrofit2.Response
 class MatchesRepository{
     suspend fun getUpcomingMatches(
         apiKey: String,
-        seasonId: String,
+        leagueId: String,
         dateFrom: String,
         dateTo: String
     ): Response<UpcomingMatchesResponse> {
-        return RetrofitInstance.api.getUpcomingMatches(apiKey, seasonId, dateFrom, dateTo)
+        return RetrofitInstance.api.getUpcomingMatches(apiKey, leagueId, dateFrom, dateTo)
     }
 }

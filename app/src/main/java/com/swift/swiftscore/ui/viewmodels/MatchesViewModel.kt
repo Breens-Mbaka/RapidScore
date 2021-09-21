@@ -11,12 +11,11 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.swift.swiftscore.BuildConfig.API_KEY
 import com.swift.swiftscore.models.topscorersmodel.TopScorersResponse
-import com.swift.swiftscore.models.upcomingmatchesmodel.Table
 import com.swift.swiftscore.models.upcomingmatchesmodel.UpcomingMatchesResponse
 import com.swift.swiftscore.repository.MatchesRepository
 import com.swift.swiftscore.util.Constants.Companion.CURRENT_DATE
 import com.swift.swiftscore.util.Constants.Companion.MATCHDAY_38_FROM_DATE
-import com.swift.swiftscore.util.Constants.Companion.SEASON_ID
+import com.swift.swiftscore.util.Constants.Companion.PL_ID_MATCHES
 import com.swift.swiftscore.util.MatchesApplication
 import com.swift.swiftscore.util.Resource
 import kotlinx.coroutines.launch
@@ -32,7 +31,7 @@ class MatchesViewModel(
     val topScorers: MutableLiveData<Resource<TopScorersResponse>> = MutableLiveData()
 
     init {
-        getUpcomingMatches(API_KEY, SEASON_ID, CURRENT_DATE, MATCHDAY_38_FROM_DATE)
+        getUpcomingMatches(API_KEY, PL_ID_MATCHES, CURRENT_DATE, MATCHDAY_38_FROM_DATE)
     }
 
     fun getUpcomingMatches(apiKey: String, seasonId: String, dateFrom: String, dateTo: String) =

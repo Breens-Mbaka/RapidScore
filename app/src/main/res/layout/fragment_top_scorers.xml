@@ -10,12 +10,13 @@
         android:id="@+id/tvUpcomingMatches"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/nunito_sans_extrabold"
         android:text="@string/tv_top_scorers"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintHorizontal_bias="0.234"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -182,5 +183,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTryAgain" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/premier_league"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/tvUpcomingMatches"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvUpcomingMatches"
+        app:layout_constraintTop_toTopOf="@id/tvUpcomingMatches" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
