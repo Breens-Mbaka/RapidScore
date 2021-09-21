@@ -49,4 +49,6 @@
     <string name="tvMatchday_38">Matchday 38</string>
     <string name="tv_Availability">Currently Not Available</string>
     <string name="tv_Later">Try again later</string>
+    <string name="favourite">Favourite</string>
+    <string name="favourites">Favourites</string>
 </resources>

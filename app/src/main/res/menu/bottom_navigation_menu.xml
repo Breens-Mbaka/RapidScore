@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:id="@+id/upcomingMatchesFragment"
-        android:title="@string/bn_tvMatches"
-        android:icon="@drawable/matches_selector"/>
+    <item
+        android:id="@+id/upcomingMatchesFragment"
+        android:icon="@drawable/matches_selector"
+        android:title="@string/bn_tvMatches" />
 
-    <item android:id="@+id/leagueTableFragment"
-    android:title="@string/bn_tvStandings"
-    android:icon="@drawable/standings_selector"/>
+    <item
+        android:id="@+id/leagueTableFragment"
+        android:icon="@drawable/standings_selector"
+        android:title="@string/bn_tvStandings" />
 
-    <item android:id="@+id/topScorersFragment"
-    android:title="@string/bn_tvTopscorers"
-    android:icon="@drawable/leaderboard_selector"/>
-
+    <item
+        android:id="@+id/topScorersFragment"
+        android:icon="@drawable/leaderboard_selector"
+        android:title="@string/bn_tvTopscorers" />
 </menu>

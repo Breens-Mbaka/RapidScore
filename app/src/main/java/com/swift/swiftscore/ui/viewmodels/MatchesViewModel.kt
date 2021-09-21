@@ -11,6 +11,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.swift.swiftscore.BuildConfig.API_KEY
 import com.swift.swiftscore.models.topscorersmodel.TopScorersResponse
+import com.swift.swiftscore.models.upcomingmatchesmodel.Table
 import com.swift.swiftscore.models.upcomingmatchesmodel.UpcomingMatchesResponse
 import com.swift.swiftscore.repository.MatchesRepository
 import com.swift.swiftscore.util.Constants.Companion.CURRENT_DATE

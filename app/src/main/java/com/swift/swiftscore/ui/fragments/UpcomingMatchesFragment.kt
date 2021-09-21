@@ -90,6 +90,7 @@ import com.swift.swiftscore.util.Constants.Companion.MATCHDAY_9_FROM_DATE
 import com.swift.swiftscore.util.Constants.Companion.MATCHDAY_9_START_DATE
 import com.swift.swiftscore.util.Constants.Companion.SEASON_ID
 import com.swift.swiftscore.util.Resource
+import kotlinx.android.synthetic.main.custom_upcoming_matches.*
 import kotlinx.android.synthetic.main.fragment_upcoming_matches.*
 
 class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {

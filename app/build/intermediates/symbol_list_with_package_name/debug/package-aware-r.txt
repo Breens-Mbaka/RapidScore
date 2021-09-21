@@ -1817,8 +1817,11 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable favourite_selector
 drawable ic_baseline_event_24
 drawable ic_baseline_event_24_black
+drawable ic_baseline_favorite_24
+drawable ic_baseline_favorite_24_black
 drawable ic_baseline_leaderboard_24
 drawable ic_baseline_leaderboard_24_black
 drawable ic_baseline_table_rows_24
@@ -1964,6 +1967,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id awayScore
 id awayTeamCrest
 id barrier
 id baseline
@@ -2073,7 +2077,6 @@ id floating
 id forever
 id fragment_container_view_tag
 id frost
-id ftScore
 id gamesPlayed
 id ghost_view
 id ghost_view_holder
@@ -2093,6 +2096,7 @@ id hideable
 id home
 id homeAsUp
 id homeNavHostFragment
+id homeScore
 id homeTeamCrest
 id home_nav_graph
 id honorRequest
@@ -2273,6 +2277,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvFavourites
 id rvLeagueTable
 id rvTopScorers
 id rvUpcomingMatches
@@ -2394,6 +2399,7 @@ id triangle
 id tvAvailability
 id tvAwayTeam
 id tvCheckConnection
+id tvFavourites
 id tvGamesPlayed
 id tvGoalDifference
 id tvGoals
@@ -2519,6 +2525,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_favourites
 layout fragment_league_table
 layout fragment_top_scorers
 layout fragment_upcoming_matches
@@ -2637,6 +2644,8 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string favourite
+string favourites
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description

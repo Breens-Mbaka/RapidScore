@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black_200">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFavourites"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFavourites" />
+    <TextView
+        android:id="@+id/tvFavourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:paddingTop="15dp"
+        android:text="@string/favourites"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgNoData"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rvFavourites"
+        app:srcCompat="@drawable/ic_no_data_amico" />
+
+    <ImageView
+        android:id="@+id/iconConnection"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFavourites"
+        app:srcCompat="@drawable/ic_baseline_wifi_off_24" />
+
+    <TextView
+        android:id="@+id/tvPoorConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="Poor Connection"
+        android:textColor="#F1F1F1"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/rvFavourites"
+        app:srcCompat="@drawable/ic_baseline_wifi_off_24" />
+
+    <TextView
+        android:id="@+id/tvPoorConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iconConnection" />
+
+    <TextView
+        android:id="@+id/tvCheckConnection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="Please check your connection"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPoorConnection" />
+
+    <TextView
+        android:id="@+id/tvTryAgain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="and try again"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/tvCheckConnection"
+        app:layout_constraintStart_toStartOf="@+id/tvCheckConnection"
+        app:layout_constraintTop_toBottomOf="@+id/tvCheckConnection" />
+
+    <TextView
+        android:id="@+id/tvAvailability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="@string/tv_Availability"
+        android:textColor="#F1F1F1"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/imgNoData"
+        app:layout_constraintStart_toStartOf="@id/imgNoData"
+        app:layout_constraintTop_toTopOf="@+id/imgNoData" />
+
+    <TextView
+        android:id="@+id/tvLater"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="@string/tv_Later"
+        android:textColor="#FFFFFF"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/tvAvailability"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@id/tvAvailability"
+        app:layout_constraintTop_toBottomOf="@+id/tvAvailability" />
+
+    <Button
+        android:id="@+id/btnRetry"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/nunito_sans_extrabold"
+        android:text="Try Again"
+        android:textAllCaps="false"
+        android:textColor="@color/black_200"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTryAgain" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

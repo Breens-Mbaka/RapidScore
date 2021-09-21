@@ -22,7 +22,7 @@
         android:id="@+id/teamCrest"
         android:layout_width="20dp"
         android:layout_height="20dp"
-        android:layout_marginStart="44dp"
+        android:layout_marginStart="39dp"
         app:layout_constraintBottom_toBottomOf="@+id/teamPosition"
         app:layout_constraintStart_toEndOf="@+id/teamPosition"
         app:layout_constraintTop_toTopOf="@+id/teamPosition"
@@ -71,12 +71,12 @@
         android:id="@+id/points"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="70dp"
         android:fontFamily="@font/nunito_sans_extrabold"
         android:text="9"
         android:textColor="@color/green"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/goalDifference"
-        app:layout_constraintStart_toEndOf="@+id/goalDifference"
+        app:layout_constraintStart_toEndOf="@+id/gamesPlayed"
         app:layout_constraintTop_toTopOf="@+id/goalDifference" />
 </androidx.constraintlayout.widget.ConstraintLayout>

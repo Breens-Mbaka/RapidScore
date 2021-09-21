@@ -1,8 +1,10 @@
 package com.swift.swiftscore.adapters
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
@@ -44,10 +46,14 @@ class UpcomingMatchesAdapter : RecyclerView.Adapter<UpcomingMatchesAdapter.Match
             Glide.with(this).load(match.away_team.logo).into(awayTeamCrest)
             tvAwayTeam.text = match.away_team.short_code
             tvSchedule.text = match.match_start
-            if(match.status_code == 3) {
-                ftScore.text = match.stats.ft_score as CharSequence?
+            if(match.status == "finished") {
+                homeScore.text = match.stats.home_score.toString()
+                awayScore.text = match.stats.away_score.toString()
+                homeScore.visibility = View.VISIBLE
+                awayScore.visibility = View.VISIBLE
             } else {
-                ftScore.text = ""
+                homeScore.visibility = View.INVISIBLE
+                awayScore.visibility = View.INVISIBLE
             }
         }
     }

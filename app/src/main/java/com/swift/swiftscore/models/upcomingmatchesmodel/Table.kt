@@ -1,6 +1,11 @@
 package com.swift.swiftscore.models.upcomingmatchesmodel
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity
 data class Table(
+    var id: Int? = null,
     val away_team: AwayTeam,
     val group: Group,
     val home_team: HomeTeam,
