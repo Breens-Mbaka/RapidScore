@@ -7,9 +7,9 @@ import com.swift.swiftscore.models.topscorersmodel.TopScorersResponse
 import com.swift.swiftscore.models.upcomingmatchesmodel.UpcomingMatchesResponse
 import com.swift.swiftscore.util.Constants.Companion.CURRENT_DATE
 import com.swift.swiftscore.util.Constants.Companion.MATCHDAY_38_FROM_DATE
-import com.swift.swiftscore.util.Constants.Companion.PL_ID
+import com.swift.swiftscore.util.Constants.Companion.PL_ID_MATCHES
+import com.swift.swiftscore.util.Constants.Companion.PL_ID_TABLE
 import com.swift.swiftscore.util.Constants.Companion.PL_SEASON
-import com.swift.swiftscore.util.Constants.Companion.SEASON_ID
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path
@@ -20,7 +20,7 @@ interface MatchesApi {
     @GET("api/v1/json/1/lookuptable.php")
     suspend fun getLeagueTable(
         @Query("l")
-        leagueId: String = PL_ID,
+        leagueId: String = PL_ID_TABLE,
         @Query("s")
         season: String = PL_SEASON,
     ): Response<StandingsResponse>
@@ -39,7 +39,7 @@ interface MatchesApi {
         @Query("apikey")
         apiKey: String = API_KEY,
         @Query("season_id")
-        seasonId: String = SEASON_ID,
+        seasonId: String = PL_ID_MATCHES,
         @Query("date_from")
         dateFrom: String = CURRENT_DATE,
         @Query("date_to")
@@ -52,6 +52,6 @@ interface MatchesApi {
         @Query("apikey")
         apiKey: String = API_KEY,
         @Query("season_id")
-        seasonId: String = SEASON_ID
+        seasonId: String = PL_ID_MATCHES
     ): Response<TopScorersResponse>
 }

@@ -2,6 +2,7 @@ package com.swift.swiftscore.ui.fragments
 
 import android.os.Bundle
 import android.view.View
+import android.widget.AdapterView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -10,8 +11,19 @@ import com.swift.swiftscore.adapters.LeagueTableAdapter
 import com.swift.swiftscore.models.standingsmodel.StandingsResponse
 import com.swift.swiftscore.ui.HomeActivity
 import com.swift.swiftscore.ui.viewmodels.StandingsViewModel
+import com.swift.swiftscore.util.Constants.Companion.LIGUE_1_ID_TABLE
+import com.swift.swiftscore.util.Constants.Companion.PL_ID_TABLE
+import com.swift.swiftscore.util.Constants.Companion.PL_SEASON
 import com.swift.swiftscore.util.Resource
 import kotlinx.android.synthetic.main.fragment_league_table.*
+import kotlinx.android.synthetic.main.fragment_league_table.btnRetry
+import kotlinx.android.synthetic.main.fragment_league_table.iconConnection
+import kotlinx.android.synthetic.main.fragment_league_table.progressBar
+import kotlinx.android.synthetic.main.fragment_league_table.tvAvailability
+import kotlinx.android.synthetic.main.fragment_league_table.tvCheckConnection
+import kotlinx.android.synthetic.main.fragment_league_table.tvLater
+import kotlinx.android.synthetic.main.fragment_league_table.tvPoorConnection
+import kotlinx.android.synthetic.main.fragment_league_table.tvTryAgain
 
 class LeagueTableFragment : Fragment(R.layout.fragment_league_table) {
 
@@ -43,6 +55,31 @@ class LeagueTableFragment : Fragment(R.layout.fragment_league_table) {
                 }
             }
         })
+        changeLeagueTable()
+    }
+
+    private fun changeLeagueTable() {
+        spinner2.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+            override fun onItemSelected(
+                adapterView: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                val leagueSelected = adapterView?.getItemAtPosition(position).toString()
+                if (leagueSelected == "Ligue 1") {
+                    viewModel.getLeagueTable(LIGUE_1_ID_TABLE, PL_SEASON)
+                }
+                else if(leagueSelected == "Premier League") {
+                    viewModel.getLeagueTable(PL_ID_TABLE, PL_SEASON)
+                }
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+
+            }
+
+        }
     }
 
     private fun responseSuccess(standingsResponse: StandingsResponse) {
@@ -65,7 +102,7 @@ class LeagueTableFragment : Fragment(R.layout.fragment_league_table) {
         btnRetry.visibility = View.VISIBLE
         rvLeagueTable.visibility = View.INVISIBLE
         btnRetry.setOnClickListener {
-            viewModel.getLeagueTable()
+            viewModel.getLeagueTable(PL_ID_TABLE, PL_SEASON)
         }
     }
 

@@ -56,6 +56,10 @@
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/drawable/ic_baseline_leaderboard_24.xml"
     },
     {
+        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/drawable_ic_baseline_filter_alt_24_grey.xml.flat",
+        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/drawable/ic_baseline_filter_alt_24_grey.xml"
+    },
+    {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/layout_fragment_favourites.xml.flat",
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/layout/fragment_favourites.xml"
     },
@@ -90,6 +94,10 @@
     {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/layout_activity_home.xml.flat",
         "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/layout/activity_home.xml"
+    },
+    {
+        "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/drawable_ic_baseline_filter_alt_24.xml.flat",
+        "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/drawable/ic_baseline_filter_alt_24.xml"
     },
     {
         "merged": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/merged_res/debug/drawable_ic_baseline_favorite_24.xml.flat",

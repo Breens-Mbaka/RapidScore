@@ -69,6 +69,7 @@ array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
 array preloaded_fonts
+array premier_league
 attr ConstraintRotate
 attr SharedValue
 attr SharedValueId
@@ -1822,6 +1823,8 @@ drawable ic_baseline_event_24
 drawable ic_baseline_event_24_black
 drawable ic_baseline_favorite_24
 drawable ic_baseline_favorite_24_black
+drawable ic_baseline_filter_alt_24
+drawable ic_baseline_filter_alt_24_grey
 drawable ic_baseline_leaderboard_24
 drawable ic_baseline_leaderboard_24_black
 drawable ic_baseline_table_rows_24
@@ -2321,6 +2324,9 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinner
+id spinner2
+id spinner3
 id spline
 id split_action_bar
 id spread

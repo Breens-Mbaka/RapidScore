@@ -11,6 +11,8 @@ import androidx.lifecycle.viewModelScope
 import com.swift.swiftscore.util.MatchesApplication
 import com.swift.swiftscore.models.standingsmodel.StandingsResponse
 import com.swift.swiftscore.repository.StandingsRepository
+import com.swift.swiftscore.util.Constants.Companion.PL_ID_TABLE
+import com.swift.swiftscore.util.Constants.Companion.PL_SEASON
 import com.swift.swiftscore.util.Resource
 import kotlinx.coroutines.launch
 import retrofit2.Response
@@ -23,12 +25,12 @@ class StandingsViewModel(
     val standingsTable: MutableLiveData<Resource<StandingsResponse>> = MutableLiveData()
 
     init {
-        getLeagueTable()
+        getLeagueTable(PL_ID_TABLE, PL_SEASON)
     }
 
-    fun getLeagueTable() {
+    fun getLeagueTable(leagueId: String, season: String) {
         viewModelScope.launch {
-            getLeagueTableCall()
+            getLeagueTableCall(leagueId, season)
         }
     }
 
@@ -41,11 +43,11 @@ class StandingsViewModel(
         return Resource.Error(response.message())
     }
 
-    private suspend fun getLeagueTableCall() {
+    private suspend fun getLeagueTableCall(leagueId: String, season: String) {
         standingsTable.postValue(Resource.Loading())
         try {
             if (checkInternetConnection()) {
-                val response = standingsRepository.getLeagueTable()
+                val response = standingsRepository.getLeagueTable(leagueId,season)
                 standingsTable.postValue(handleLeagueTableResponse(response))
             } else {
                 standingsTable.postValue(Resource.Error("No internet connection"))
