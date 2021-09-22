@@ -27,7 +27,7 @@
 
 ## Description
 
-* A football stats and live-score app built with Kotlin,MVVM architecture,Retrofit, Coroutines and Navigation Components
+* A simple football stats and live-score Android app
 * A user can select a league they want to view the league table, top scorers and also be updated on the live-scores in realtime
 * User can be able to select to see upcoming matches for a given day
 * Project was completed with MVVM architecture and following android app architecture using Retrofit , Coroutines and Navigation components
