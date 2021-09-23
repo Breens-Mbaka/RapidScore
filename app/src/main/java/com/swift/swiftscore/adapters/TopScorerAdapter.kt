@@ -45,15 +45,23 @@ class TopScorerAdapter : RecyclerView.Adapter<TopScorerAdapter.TopScorerViewHold
             } else {
                 playerPosition.text = player.pos.toString()
             }
-            var name:String? = player.player.player_name
-            name = name?.substring(0, 7) + "..."
-            playerName.text = name
+            val name: String? = player.player.player_name
+            val fullNamesArray = arrayListOf<String>()
+            val arr = name?.split(" ")
+            if (arr != null) {
+                fullNamesArray.addAll(arr)
+            }
+            if (fullNamesArray.size >= 1) {
+                playerName.text = "${fullNamesArray[0]} ${fullNamesArray[1]}"
+            } else {
+                playerName.text = name
+            }
             clubName.text = player.team.team_name
             goals.text = player.goals.overall.toString()
         }
     }
 
     override fun getItemCount(): Int {
-        return differ.currentList.size
+        return 10
     }
 }
