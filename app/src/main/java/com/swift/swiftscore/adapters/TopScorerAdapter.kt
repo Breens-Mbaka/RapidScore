@@ -45,8 +45,8 @@ class TopScorerAdapter : RecyclerView.Adapter<TopScorerAdapter.TopScorerViewHold
             } else {
                 playerPosition.text = player.pos.toString()
             }
-            var name = player.player.player_name
-            name = name.substring(0, 10) + "..."
+            var name:String? = player.player.player_name
+            name = name?.substring(0, 7) + "..."
             playerName.text = name
             clubName.text = player.team.team_name
             goals.text = player.goals.overall.toString()
