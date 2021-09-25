@@ -6,7 +6,7 @@
 <img src="/images/pastscores.png" width="30%"/> 
 <img src="/images/leaguetable.png" width="30%"/>
 <img src="/images/topscorers.png" width="30%"/>
-<img src="https://user-images.githubusercontent.com/72180010/134767870-de7060ee-8f5c-45a2-947b-5e818c051d23.gif" width="40%" height="600px"/>
+<img src="https://user-images.githubusercontent.com/72180010/134767870-de7060ee-8f5c-45a2-947b-5e818c051d23.gif" width="50%" height="600px"/>
 </p>
 
 ---
