@@ -1,4 +1,4 @@
-# SwiftScore
+# RapidScore
 
 ### Screenshots
 <p align="left">
