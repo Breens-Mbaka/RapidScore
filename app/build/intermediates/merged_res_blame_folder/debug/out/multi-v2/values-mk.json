@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
+            "outputFile": "/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-mk/values-mk.xml",
             "map": [
                 {
                     "source": "/home/breens/.gradle/caches/transforms-3/b317bbf3781c12b23ab81834595a78d8/transformed/core-1.6.0/res/values-mk/values-mk.xml",

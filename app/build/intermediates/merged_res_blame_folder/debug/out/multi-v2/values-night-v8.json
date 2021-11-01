@@ -1,27 +1,8 @@
 {
     "logs": [
         {
-            "outputFile": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
+            "outputFile": "/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-night-v8/values-night-v8.xml",
             "map": [
-                {
-                    "source": "/home/breens/AndroidStudioProjects/SwiftScore/app/src/main/res/values-night/themes.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "100",
-                        "endLines": "14",
-                        "endColumns": "12",
-                        "endOffsets": "813"
-                    },
-                    "to": {
-                        "startLines": "25",
-                        "startColumns": "4",
-                        "startOffsets": "2594",
-                        "endLines": "37",
-                        "endColumns": "12",
-                        "endOffsets": "3305"
-                    }
-                },
                 {
                     "source": "/home/breens/.gradle/caches/transforms-3/cbeb5760e102e25da6bf512bbd14a8e7/transformed/material-1.4.0/res/values-night-v8/values-night-v8.xml",
                     "from": {
@@ -37,6 +18,25 @@
                         "startOffsets": "732,820,944,1046,1148,1264,1366,1480,1608,1724,1846,1982,2102,2236,2356,2468,3399,3523,3653,3775,3913,4047,4163",
                         "endColumns": "87,123,101,101,115,101,113,127,115,121,135,119,133,119,111,125,123,129,121,137,133,115,119",
                         "endOffsets": "815,939,1041,1143,1259,1361,1475,1603,1719,1841,1977,2097,2231,2351,2463,2589,3518,3648,3770,3908,4042,4158,4278"
+                    }
+                },
+                {
+                    "source": "/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/res/values-night/themes.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "100",
+                        "endLines": "14",
+                        "endColumns": "12",
+                        "endOffsets": "813"
+                    },
+                    "to": {
+                        "startLines": "25",
+                        "startColumns": "4",
+                        "startOffsets": "2594",
+                        "endLines": "37",
+                        "endColumns": "12",
+                        "endOffsets": "3305"
                     }
                 },
                 {

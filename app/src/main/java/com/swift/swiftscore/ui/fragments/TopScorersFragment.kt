@@ -6,12 +6,12 @@ import android.widget.AdapterView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.swift.swiftscore.BuildConfig.API_KEY
 import com.swift.swiftscore.R
 import com.swift.swiftscore.adapters.TopScorerAdapter
 import com.swift.swiftscore.models.topscorersmodel.TopScorersResponse
 import com.swift.swiftscore.ui.HomeActivity
 import com.swift.swiftscore.ui.viewmodels.TopScorersViewModel
+import com.swift.swiftscore.util.Constants.Companion.API_KEY
 import com.swift.swiftscore.util.Constants.Companion.LIGUE1_ID_MATCHES
 import com.swift.swiftscore.util.Constants.Companion.PL_ID_MATCHES
 import com.swift.swiftscore.util.Resource
@@ -97,7 +97,7 @@ class TopScorersFragment : Fragment(R.layout.fragment_top_scorers) {
         rvTopScorers.visibility = View.INVISIBLE
         btnRetry.setOnClickListener {
             viewModel.getTopScorers(
-                com.swift.swiftscore.BuildConfig.API_KEY,
+                API_KEY,
                 PL_ID_MATCHES
             )
         }

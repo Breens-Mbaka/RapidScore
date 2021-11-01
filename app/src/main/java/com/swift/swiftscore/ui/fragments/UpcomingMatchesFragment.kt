@@ -1,18 +1,20 @@
 package com.swift.swiftscore.ui.fragments
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.swift.swiftscore.BuildConfig.API_KEY
 import com.swift.swiftscore.R
 import com.swift.swiftscore.adapters.UpcomingMatchesAdapter
+import com.swift.swiftscore.databinding.FragmentUpcomingMatchesBinding
 import com.swift.swiftscore.models.upcomingmatchesmodel.UpcomingMatchesResponse
 import com.swift.swiftscore.ui.HomeActivity
 import com.swift.swiftscore.ui.viewmodels.MatchesViewModel
+import com.swift.swiftscore.util.Constants.Companion.API_KEY
 import com.swift.swiftscore.util.Constants.Companion.CURRENT_DATE
 import com.swift.swiftscore.util.Constants.Companion.LIGUE1_ID_MATCHES
 import com.swift.swiftscore.util.Constants.Companion.MATCHDAY_10_FROM_DATE
@@ -169,15 +171,26 @@ import com.swift.swiftscore.util.Constants.Companion.MATCHDAY_9_START_DATE
 import com.swift.swiftscore.util.Constants.Companion.MATCHDAY_9_START_DATE_LIGUE1
 import com.swift.swiftscore.util.Constants.Companion.PL_ID_MATCHES
 import com.swift.swiftscore.util.Resource
-import kotlinx.android.synthetic.main.fragment_upcoming_matches.*
 
 class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
+
+    private var _binding: FragmentUpcomingMatchesBinding? = null
+    private val binding get() = _binding!!
 
     lateinit var viewModel: MatchesViewModel
     lateinit var upcomingMatchesAdapter: UpcomingMatchesAdapter
     val TAG = "UpcomingMatchesFragment"
     private var league: Boolean = true
     private var leagueId: String = PL_ID_MATCHES
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentUpcomingMatchesBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -188,8 +201,13 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
         changeLeague()
     }
 
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+    }
+
     private fun changeLeague() {
-        spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+        binding.spinner.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 adapterView: AdapterView<*>?,
                 view: View?,
@@ -217,7 +235,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
     }
 
     private fun observeUpcomingMatches() {
-        viewModel.upcomingMatches.observe(viewLifecycleOwner, Observer { response ->
+        viewModel.upcomingMatches.observe(viewLifecycleOwner, { response ->
             when (response) {
                 is Resource.Success -> {
                     hideProgressBar()
@@ -237,34 +255,33 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
             }
         })
     }
-
     private fun responseSuccess(upcomingMatchesResponse: UpcomingMatchesResponse) {
-        iconConnection.visibility = View.INVISIBLE
-        tvPoorConnection.visibility = View.INVISIBLE
-        tvCheckConnection.visibility = View.INVISIBLE
-        tvTryAgain.visibility = View.INVISIBLE
-        btnRetry.visibility = View.INVISIBLE
-        imgNoData.visibility = View.INVISIBLE
-        tvAvailability.visibility = View.INVISIBLE
-        tvLater.visibility = View.INVISIBLE
-        rvUpcomingMatches.visibility = View.VISIBLE
+        binding.iconConnection.visibility = View.INVISIBLE
+        binding.tvPoorConnection.visibility = View.INVISIBLE
+        binding.tvCheckConnection.visibility = View.INVISIBLE
+        binding.tvTryAgain.visibility = View.INVISIBLE
+        binding.btnRetry.visibility = View.INVISIBLE
+        binding.imgNoData.visibility = View.INVISIBLE
+        binding.tvAvailability.visibility = View.INVISIBLE
+        binding.tvLater.visibility = View.INVISIBLE
+        binding.rvUpcomingMatches.visibility = View.VISIBLE
         upcomingMatchesAdapter.differ.submitList(upcomingMatchesResponse.data)
     }
 
     private fun responseError(message: String) {
         if (message == "") {
-            imgNoData.visibility = View.VISIBLE
-            tvAvailability.visibility = View.VISIBLE
-            tvLater.visibility = View.VISIBLE
-            rvUpcomingMatches.visibility = View.INVISIBLE
+            binding.imgNoData.visibility = View.VISIBLE
+            binding.tvAvailability.visibility = View.VISIBLE
+            binding.tvLater.visibility = View.VISIBLE
+            binding.rvUpcomingMatches.visibility = View.INVISIBLE
         } else {
-            iconConnection.visibility = View.VISIBLE
-            tvPoorConnection.visibility = View.VISIBLE
-            tvCheckConnection.visibility = View.VISIBLE
-            tvTryAgain.visibility = View.VISIBLE
-            btnRetry.visibility = View.VISIBLE
-            rvUpcomingMatches.visibility = View.INVISIBLE
-            btnRetry.setOnClickListener {
+            binding.iconConnection.visibility = View.VISIBLE
+            binding.tvPoorConnection.visibility = View.VISIBLE
+            binding.tvCheckConnection.visibility = View.VISIBLE
+            binding.tvTryAgain.visibility = View.VISIBLE
+            binding.btnRetry.visibility = View.VISIBLE
+            binding.rvUpcomingMatches.visibility = View.INVISIBLE
+            binding.btnRetry.setOnClickListener {
                 viewModel.getUpcomingMatches(
                     API_KEY,
                     leagueId,
@@ -276,7 +293,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
     }
 
     private fun filterMatchDays() {
-        matchday1.setOnClickListener {
+        binding.matchday1.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -285,7 +302,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
             )
 
         }
-        matchday2.setOnClickListener {
+        binding.matchday2.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -293,7 +310,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_2_FROM_DATE
             )
         }
-        matchday3.setOnClickListener {
+        binding.matchday3.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -301,7 +318,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_3_FROM_DATE
             )
         }
-        matchday4.setOnClickListener {
+        binding.matchday4.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -309,7 +326,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_4_FROM_DATE
             )
         }
-        matchday5.setOnClickListener {
+        binding.matchday5.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -317,7 +334,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_5_FROM_DATE
             )
         }
-        matchday6.setOnClickListener {
+        binding.matchday6.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -325,7 +342,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_6_FROM_DATE
             )
         }
-        matchday7.setOnClickListener {
+        binding.matchday7.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -333,7 +350,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_7_FROM_DATE
             )
         }
-        matchday8.setOnClickListener {
+        binding.matchday8.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -341,7 +358,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_8_FROM_DATE
             )
         }
-        matchday9.setOnClickListener {
+        binding.matchday9.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -349,7 +366,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_9_FROM_DATE
             )
         }
-        matchday10.setOnClickListener {
+        binding.matchday10.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -357,7 +374,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_10_FROM_DATE
             )
         }
-        matchday11.setOnClickListener {
+        binding.matchday11.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -365,7 +382,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_11_FROM_DATE
             )
         }
-        matchday12.setOnClickListener {
+        binding.matchday12.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -373,7 +390,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_12_FROM_DATE
             )
         }
-        matchday13.setOnClickListener {
+        binding.matchday13.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -381,7 +398,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_13_FROM_DATE
             )
         }
-        matchday14.setOnClickListener {
+        binding.matchday14.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -389,7 +406,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_14_FROM_DATE
             )
         }
-        matchday15.setOnClickListener {
+        binding.matchday15.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -397,7 +414,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_15_FROM_DATE
             )
         }
-        matchday16.setOnClickListener {
+        binding.matchday16.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -405,7 +422,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_16_FROM_DATE
             )
         }
-        matchday17.setOnClickListener {
+        binding.matchday17.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -413,7 +430,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_17_FROM_DATE
             )
         }
-        matchday18.setOnClickListener {
+        binding.matchday18.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -421,7 +438,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_18_FROM_DATE
             )
         }
-        matchday19.setOnClickListener {
+        binding.matchday19.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -429,7 +446,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_19_FROM_DATE
             )
         }
-        matchday20.setOnClickListener {
+        binding.matchday20.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -437,7 +454,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_20_FROM_DATE
             )
         }
-        matchday21.setOnClickListener {
+        binding.matchday21.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -445,7 +462,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_21_FROM_DATE
             )
         }
-        matchday22.setOnClickListener {
+        binding.matchday22.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -453,7 +470,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_22_FROM_DATE
             )
         }
-        matchday23.setOnClickListener {
+        binding.matchday23.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -461,7 +478,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_23_FROM_DATE
             )
         }
-        matchday24.setOnClickListener {
+        binding.matchday24.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -469,7 +486,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_24_FROM_DATE
             )
         }
-        matchday25.setOnClickListener {
+        binding.matchday25.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -477,7 +494,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_25_FROM_DATE
             )
         }
-        matchday26.setOnClickListener {
+        binding.matchday26.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -485,7 +502,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_26_FROM_DATE
             )
         }
-        matchday27.setOnClickListener {
+        binding.matchday27.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -493,7 +510,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_27_FROM_DATE
             )
         }
-        matchday28.setOnClickListener {
+        binding.matchday28.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -501,7 +518,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_28_FROM_DATE
             )
         }
-        matchday29.setOnClickListener {
+        binding.matchday29.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -509,7 +526,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_29_FROM_DATE
             )
         }
-        matchday30.setOnClickListener {
+        binding.matchday30.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -517,7 +534,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_30_FROM_DATE
             )
         }
-        matchday31.setOnClickListener {
+        binding.matchday31.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -525,7 +542,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_31_FROM_DATE
             )
         }
-        matchday32.setOnClickListener {
+        binding.matchday32.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -533,7 +550,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_32_FROM_DATE
             )
         }
-        matchday33.setOnClickListener {
+        binding.matchday33.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -541,7 +558,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_33_FROM_DATE
             )
         }
-        matchday34.setOnClickListener {
+        binding.matchday34.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -549,7 +566,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_34_FROM_DATE
             )
         }
-        matchday35.setOnClickListener {
+        binding.matchday35.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -557,7 +574,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_35_FROM_DATE
             )
         }
-        matchday36.setOnClickListener {
+        binding.matchday36.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -565,7 +582,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_36_FROM_DATE
             )
         }
-        matchday37.setOnClickListener {
+        binding.matchday37.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -573,7 +590,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_37_FROM_DATE
             )
         }
-        matchday38.setOnClickListener {
+        binding.matchday38.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -584,7 +601,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
     }
 
     private fun filterMatchDaysForLigue1() {
-        matchday1.setOnClickListener {
+        binding.matchday1.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -593,7 +610,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
             )
 
         }
-        matchday2.setOnClickListener {
+        binding.matchday2.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -601,7 +618,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_2_FROM_DATE_LIGUE1
             )
         }
-        matchday3.setOnClickListener {
+        binding.matchday3.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -609,7 +626,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_3_FROM_DATE_LIGUE1
             )
         }
-        matchday4.setOnClickListener {
+        binding.matchday4.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -617,7 +634,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_4_FROM_DATE_LIGUE1
             )
         }
-        matchday5.setOnClickListener {
+        binding.matchday5.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -625,7 +642,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_5_FROM_DATE_LIGUE1
             )
         }
-        matchday6.setOnClickListener {
+        binding.matchday6.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -633,7 +650,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_6_FROM_DATE_LIGUE1
             )
         }
-        matchday7.setOnClickListener {
+        binding.matchday7.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -641,7 +658,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_7_FROM_DATE_LIGUE1
             )
         }
-        matchday8.setOnClickListener {
+        binding.matchday8.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -649,7 +666,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_8_FROM_DATE_LIGUE1
             )
         }
-        matchday9.setOnClickListener {
+        binding.matchday9.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -657,7 +674,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_9_FROM_DATE_LIGUE1
             )
         }
-        matchday10.setOnClickListener {
+        binding.matchday10.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -665,7 +682,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_10_FROM_DATE_LIGUE1
             )
         }
-        matchday11.setOnClickListener {
+        binding.matchday11.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -673,7 +690,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_11_FROM_DATE_LIGUE1
             )
         }
-        matchday12.setOnClickListener {
+        binding.matchday12.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -681,7 +698,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_12_FROM_DATE_LIGUE1
             )
         }
-        matchday13.setOnClickListener {
+        binding.matchday13.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -689,7 +706,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_13_FROM_DATE_LIGUE1
             )
         }
-        matchday14.setOnClickListener {
+        binding.matchday14.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -697,7 +714,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_14_FROM_DATE_LIGUE1
             )
         }
-        matchday15.setOnClickListener {
+        binding.matchday15.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -705,7 +722,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_15_FROM_DATE_LIGUE1
             )
         }
-        matchday16.setOnClickListener {
+        binding.matchday16.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -713,7 +730,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_16_FROM_DATE_LIGUE1
             )
         }
-        matchday17.setOnClickListener {
+        binding.matchday17.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -721,7 +738,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_17_FROM_DATE_LIGUE1
             )
         }
-        matchday18.setOnClickListener {
+        binding.matchday18.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -729,7 +746,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_18_FROM_DATE_LIGUE1
             )
         }
-        matchday19.setOnClickListener {
+        binding.matchday19.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -737,7 +754,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_19_FROM_DATE_LIGUE1
             )
         }
-        matchday20.setOnClickListener {
+        binding.matchday20.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -745,7 +762,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_20_FROM_DATE_LIGUE1
             )
         }
-        matchday21.setOnClickListener {
+        binding.matchday21.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -753,7 +770,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_21_FROM_DATE_LIGUE1
             )
         }
-        matchday22.setOnClickListener {
+        binding.matchday22.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -761,7 +778,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_22_FROM_DATE_LIGUE1
             )
         }
-        matchday23.setOnClickListener {
+        binding.matchday23.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -769,7 +786,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_23_FROM_DATE_LIGUE1
             )
         }
-        matchday24.setOnClickListener {
+        binding.matchday24.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -777,7 +794,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_24_FROM_DATE_LIGUE1
             )
         }
-        matchday25.setOnClickListener {
+        binding.matchday25.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -785,7 +802,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_25_FROM_DATE_LIGUE1
             )
         }
-        matchday26.setOnClickListener {
+        binding.matchday26.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -793,7 +810,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_26_FROM_DATE_LIGUE1
             )
         }
-        matchday27.setOnClickListener {
+        binding.matchday27.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -801,7 +818,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_27_FROM_DATE_LIGUE1
             )
         }
-        matchday28.setOnClickListener {
+        binding.matchday28.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -809,7 +826,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_28_FROM_DATE_LIGUE1
             )
         }
-        matchday29.setOnClickListener {
+        binding.matchday29.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -817,7 +834,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_29_FROM_DATE_LIGUE1
             )
         }
-        matchday30.setOnClickListener {
+        binding.matchday30.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -825,7 +842,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_30_FROM_DATE_LIGUE1
             )
         }
-        matchday31.setOnClickListener {
+        binding.matchday31.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -833,7 +850,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_31_FROM_DATE_LIGUE1
             )
         }
-        matchday32.setOnClickListener {
+        binding.matchday32.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -841,7 +858,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_32_FROM_DATE_LIGUE1
             )
         }
-        matchday33.setOnClickListener {
+        binding.matchday33.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -849,7 +866,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_33_FROM_DATE_LIGUE1
             )
         }
-        matchday34.setOnClickListener {
+        binding.matchday34.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -857,7 +874,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_34_FROM_DATE_LIGUE1
             )
         }
-        matchday35.setOnClickListener {
+        binding.matchday35.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -865,7 +882,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_35_FROM_DATE_LIGUE1
             )
         }
-        matchday36.setOnClickListener {
+        binding.matchday36.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -873,7 +890,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_36_FROM_DATE_LIGUE1
             )
         }
-        matchday37.setOnClickListener {
+        binding.matchday37.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -881,7 +898,7 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
                 MATCHDAY_37_FROM_DATE_LIGUE1
             )
         }
-        matchday38.setOnClickListener {
+        binding.matchday38.setOnClickListener {
             viewModel.getUpcomingMatches(
                 API_KEY,
                 leagueId,
@@ -892,17 +909,17 @@ class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
     }
 
     private fun hideProgressBar() {
-        progressBar.visibility = View.INVISIBLE
+        binding.progressBar.visibility = View.INVISIBLE
 
     }
 
     private fun showProgressBar() {
-        progressBar.visibility = View.VISIBLE
+        binding.progressBar.visibility = View.VISIBLE
     }
 
     private fun setupRecyclerView() {
         upcomingMatchesAdapter = UpcomingMatchesAdapter()
-        rvUpcomingMatches.apply {
+        binding.rvUpcomingMatches.apply {
             adapter = upcomingMatchesAdapter
             layoutManager = LinearLayoutManager(activity)
         }
