@@ -56,8 +56,7 @@ class TopScorersFragment : Fragment(R.layout.fragment_top_scorers) {
                 val leagueSelected = adapterView?.getItemAtPosition(position).toString()
                 if (leagueSelected == "Ligue 1") {
                     viewModel.getTopScorers(API_KEY, LIGUE1_ID_MATCHES)
-                }
-                else if(leagueSelected == "Premier League") {
+                } else if (leagueSelected == "Premier League") {
                     viewModel.getTopScorers(API_KEY, PL_ID_MATCHES)
                 }
             }
