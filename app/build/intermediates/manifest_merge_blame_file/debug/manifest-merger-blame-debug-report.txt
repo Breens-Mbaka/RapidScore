@@ -34,42 +34,41 @@
 21-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:13:9-54
 22        android:supportsRtl="true"
 22-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:14:9-35
-23        android:testOnly="true"
-24        android:theme="@style/splashScreenTheme" >
-24-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:15:9-49
-25        <activity
-25-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:16:9-24:20
-26            android:name="com.swift.swiftscore.ui.HomeActivity"
-26-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:17:13-44
-27            android:exported="true" >
-27-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:18:13-36
-28            <intent-filter>
-28-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:19:13-23:29
-29                <action android:name="android.intent.action.MAIN" />
-29-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:20:17-69
-29-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:20:25-66
-30
-31                <category android:name="android.intent.category.LAUNCHER" />
-31-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:22:17-77
-31-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:22:27-74
-32            </intent-filter>
-33        </activity>
-34
-35        <meta-data
-35-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:25:9-27:57
-36            android:name="preloaded_fonts"
-36-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:26:13-43
-37            android:resource="@array/preloaded_fonts" />
-37-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:27:13-54
-38
-39        <service
-39-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
-40            android:name="androidx.room.MultiInstanceInvalidationService"
-40-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
-41            android:directBootAware="true"
-41-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
-42            android:exported="false" />
-42-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
-43    </application>
-44
-45</manifest>
+23        android:theme="@style/splashScreenTheme" >
+23-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:15:9-49
+24        <activity
+24-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:16:9-24:20
+25            android:name="com.swift.swiftscore.ui.HomeActivity"
+25-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:17:13-44
+26            android:exported="true" >
+26-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:18:13-36
+27            <intent-filter>
+27-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:19:13-23:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:20:17-69
+28-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:20:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:22:17-77
+30-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:22:27-74
+31            </intent-filter>
+32        </activity>
+33
+34        <meta-data
+34-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:25:9-27:57
+35            android:name="preloaded_fonts"
+35-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:26:13-43
+36            android:resource="@array/preloaded_fonts" />
+36-->/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:27:13-54
+37
+38        <service
+38-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+39            android:name="androidx.room.MultiInstanceInvalidationService"
+39-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+40            android:directBootAware="true"
+40-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+41            android:exported="false" />
+41-->[androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+42    </application>
+43
+44</manifest>
