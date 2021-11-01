@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
+            "outputFile": "/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rAU/values-en-rAU.xml",
             "map": [
                 {
                     "source": "/home/breens/.gradle/caches/transforms-3/380916c6ab93ced858439646ca395f57/transformed/navigation-ui-2.2.1/res/values-en-rAU/values-en-rAU.xml",

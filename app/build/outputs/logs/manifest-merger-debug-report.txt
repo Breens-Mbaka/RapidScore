@@ -1,9 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:2:1-30:12
+ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:2:1-30:12
+MERGED from [androidx.databinding:viewbinding:7.0.0] /home/breens/.gradle/caches/transforms-3/3c9ef8d4f0ec980d4c126a7aa02e4787/transformed/jetified-viewbinding-7.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.2.1] /home/breens/.gradle/caches/transforms-3/3f62ea4a50bc15f2222636a11e599b3a/transformed/navigation-fragment-ktx-2.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment-ktx:1.2.0] /home/breens/.gradle/caches/transforms-3/807b77292cd2cdcac63c78c3efc24da1/transformed/jetified-fragment-ktx-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui-ktx:2.2.1] /home/breens/.gradle/caches/transforms-3/db514f2f62c326779ef4aac2cc4f6c77/transformed/navigation-ui-ktx-2.2.1/AndroidManifest.xml:17:1-24:12
@@ -12,7 +13,7 @@ MERGED from [androidx.activity:activity-ktx:1.1.0] /home/breens/.gradle/caches/t
 MERGED from [androidx.core:core-ktx:1.6.0] /home/breens/.gradle/caches/transforms-3/f88005ee9301fb8fe4e3a81045f64499/transformed/jetified-core-ktx-1.6.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.navigation:navigation-ui:2.2.1] /home/breens/.gradle/caches/transforms-3/380916c6ab93ced858439646ca395f57/transformed/navigation-ui-2.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.4.0] /home/breens/.gradle/caches/transforms-3/cbeb5760e102e25da6bf512bbd14a8e7/transformed/material-1.4.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /home/breens/.gradle/caches/transforms-3/e56e259aff47784b59d63cb8e06d46ad/transformed/constraintlayout-2.1.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] /home/breens/.gradle/caches/transforms-3/006e349fa3147bf01ae96d02f61a65bc/transformed/constraintlayout-2.1.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] /home/breens/.gradle/caches/transforms-3/439cb19340e12aa62771272ae0595795/transformed/appcompat-1.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /home/breens/.gradle/caches/transforms-3/c7c64193b0c4fbfb62e9c87cf05fb0a6/transformed/jetified-lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.room:room-ktx:2.2.5] /home/breens/.gradle/caches/transforms-3/785872681ff0ce497e9a813fe02fa7e7/transformed/jetified-room-ktx-2.2.5/AndroidManifest.xml:17:1-24:12
@@ -20,8 +21,6 @@ MERGED from [androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/trans
 MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] /home/breens/.gradle/caches/transforms-3/7ae07c45c6c78fb2170d22899548ac77/transformed/jetified-lifecycle-runtime-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /home/breens/.gradle/caches/transforms-3/85d6e6efe8e63889cddfcc006e48e7df/transformed/jetified-GlideToVectorYou-v2.0.0/AndroidManifest.xml:2:1-18:12
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/breens/.gradle/caches/transforms-3/6668f8a0f8d9342148abf404094e3d6c/transformed/jetified-glide-4.11.0/AndroidManifest.xml:2:1-12:12
-MERGED from [androidx.navigation:navigation-common-ktx:2.2.1] /home/breens/.gradle/caches/transforms-3/47db02eef506d1d1acc49c272e39b686/transformed/navigation-common-ktx-2.2.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /home/breens/.gradle/caches/transforms-3/b71bcbd68517f1e6b7e38b7f82a2e7c8/transformed/jetified-lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/breens/.gradle/caches/transforms-3/7a51dc4f71120fb9abfd415562dbcb80/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-fragment:2.2.1] /home/breens/.gradle/caches/transforms-3/c8b8525721e4b2a9350d3c9fa7430310/transformed/navigation-fragment-2.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.fragment:fragment:1.3.6] /home/breens/.gradle/caches/transforms-3/2e592d87165ffa4f95a869bb245eff49/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
@@ -39,6 +38,7 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/breens/.grad
 MERGED from [androidx.loader:loader:1.0.0] /home/breens/.gradle/caches/transforms-3/9737fd2efa0cbbf079b50ed1e9be1fce/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/breens/.gradle/caches/transforms-3/87d826a2902912f513ebab6d4558adb6/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.customview:customview:1.0.0] /home/breens/.gradle/caches/transforms-3/175f872aa544130393d7a807c14ab95e/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-ktx:2.2.1] /home/breens/.gradle/caches/transforms-3/47db02eef506d1d1acc49c272e39b686/transformed/navigation-common-ktx-2.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-common:2.2.1] /home/breens/.gradle/caches/transforms-3/676277dab1a6069150e5c4fca9633c6d/transformed/navigation-common-2.2.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.6.0] /home/breens/.gradle/caches/transforms-3/b317bbf3781c12b23ab81834595a78d8/transformed/core-1.6.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /home/breens/.gradle/caches/transforms-3/0a4cd4c9c56e867fe1afc85a98abb250/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -53,6 +53,7 @@ MERGED from [com.github.bumptech.glide:gifdecoder:4.11.0] /home/breens/.gradle/c
 MERGED from [androidx.exifinterface:exifinterface:1.0.0] /home/breens/.gradle/caches/transforms-3/15bd9cd0596b4b3ee43ea524b4efc8f2/transformed/exifinterface-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/breens/.gradle/caches/transforms-3/72abbfbb852e81b28d32b910c526e47a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.tracing:tracing:1.0.0] /home/breens/.gradle/caches/transforms-3/69d9d927b5f5c1de3305d52d724e5ac9/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /home/breens/.gradle/caches/transforms-3/b71bcbd68517f1e6b7e38b7f82a2e7c8/transformed/jetified-lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/breens/.gradle/caches/transforms-3/89b1e87c683e542e572d49384fc183fa/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/breens/.gradle/caches/transforms-3/40dcdc42b600f6cfc9e521d227dce6c8/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] /home/breens/.gradle/caches/transforms-3/304d71a1ea7304dbba95d84aab7b03b4/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
@@ -62,41 +63,41 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/b
 MERGED from [androidx.print:print:1.0.0] /home/breens/.gradle/caches/transforms-3/d3bfe44f00ec12e318eed1259867a7a5/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/breens/.gradle/caches/transforms-3/14325a2c2aa897bbc10f03356f77f0c0/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.caverock:androidsvg-aar:1.3] /home/breens/.gradle/caches/transforms-3/fb98fc6d5182e547fee3b2df673b4195/transformed/jetified-androidsvg-aar-1.3/AndroidManifest.xml:2:1-11:12
-INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:2:1-30:12
-INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:2:1-30:12
 	package
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:3:5-35
-		INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
-		INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:3:5-35
+		INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
+		INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:2:1-30:12
-		INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
+		INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:2:1-30:12
+		INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:2:1-30:12
-		INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
+		INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:2:1-30:12
+		INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:5:5-66
+ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:5:5-66
 MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /home/breens/.gradle/caches/transforms-3/85d6e6efe8e63889cddfcc006e48e7df/transformed/jetified-GlideToVectorYou-v2.0.0/AndroidManifest.xml:11:5-67
 MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /home/breens/.gradle/caches/transforms-3/85d6e6efe8e63889cddfcc006e48e7df/transformed/jetified-GlideToVectorYou-v2.0.0/AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:5:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:6:5-78
+ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:6:5-78
 MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /home/breens/.gradle/caches/transforms-3/85d6e6efe8e63889cddfcc006e48e7df/transformed/jetified-GlideToVectorYou-v2.0.0/AndroidManifest.xml:16:5-79
 MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /home/breens/.gradle/caches/transforms-3/85d6e6efe8e63889cddfcc006e48e7df/transformed/jetified-GlideToVectorYou-v2.0.0/AndroidManifest.xml:16:5-79
 	android:name
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:6:22-76
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:8:5-28:19
+ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:8:5-28:19
 MERGED from [com.google.android.material:material:1.4.0] /home/breens/.gradle/caches/transforms-3/cbeb5760e102e25da6bf512bbd14a8e7/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] /home/breens/.gradle/caches/transforms-3/cbeb5760e102e25da6bf512bbd14a8e7/transformed/material-1.4.0/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /home/breens/.gradle/caches/transforms-3/e56e259aff47784b59d63cb8e06d46ad/transformed/constraintlayout-2.1.0/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /home/breens/.gradle/caches/transforms-3/e56e259aff47784b59d63cb8e06d46ad/transformed/constraintlayout-2.1.0/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] /home/breens/.gradle/caches/transforms-3/006e349fa3147bf01ae96d02f61a65bc/transformed/constraintlayout-2.1.1/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] /home/breens/.gradle/caches/transforms-3/006e349fa3147bf01ae96d02f61a65bc/transformed/constraintlayout-2.1.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
 MERGED from [androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:24:5-29:19
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/breens/.gradle/caches/transforms-3/6668f8a0f8d9342148abf404094e3d6c/transformed/jetified-glide-4.11.0/AndroidManifest.xml:10:5-20
@@ -110,45 +111,47 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/breen
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.6.0] /home/breens/.gradle/caches/transforms-3/b317bbf3781c12b23ab81834595a78d8/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:14:9-35
 	android:label
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:12:9-41
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:12:9-41
 	android:roundIcon
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:13:9-54
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:13:9-54
 	android:icon
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:11:9-49
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:11:9-49
 	android:allowBackup
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:10:9-35
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:15:9-49
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:15:9-49
 	android:name
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:9:9-68
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:9:9-68
 activity#com.swift.swiftscore.ui.HomeActivity
-ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:16:9-24:20
+ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:16:9-24:20
 	android:exported
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:18:13-36
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:18:13-36
 	android:name
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:17:13-44
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:17:13-44
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:19:13-23:29
+ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:19:13-23:29
 action#android.intent.action.MAIN
-ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:20:17-69
+ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:20:17-69
 	android:name
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:20:25-66
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:20:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:22:17-77
+ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:22:17-77
 	android:name
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:22:27-74
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:22:27-74
 meta-data#preloaded_fonts
-ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:25:9-27:57
+ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:25:9-27:57
 	android:resource
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:27:13-54
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:27:13-54
 	android:name
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml:26:13-43
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml:26:13-43
 uses-sdk
-INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
-INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
+INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
+INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:7.0.0] /home/breens/.gradle/caches/transforms-3/3c9ef8d4f0ec980d4c126a7aa02e4787/transformed/jetified-viewbinding-7.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:7.0.0] /home/breens/.gradle/caches/transforms-3/3c9ef8d4f0ec980d4c126a7aa02e4787/transformed/jetified-viewbinding-7.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.2.1] /home/breens/.gradle/caches/transforms-3/3f62ea4a50bc15f2222636a11e599b3a/transformed/navigation-fragment-ktx-2.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment-ktx:2.2.1] /home/breens/.gradle/caches/transforms-3/3f62ea4a50bc15f2222636a11e599b3a/transformed/navigation-fragment-ktx-2.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment-ktx:1.2.0] /home/breens/.gradle/caches/transforms-3/807b77292cd2cdcac63c78c3efc24da1/transformed/jetified-fragment-ktx-1.2.0/AndroidManifest.xml:20:5-22:41
@@ -165,8 +168,8 @@ MERGED from [androidx.navigation:navigation-ui:2.2.1] /home/breens/.gradle/cache
 MERGED from [androidx.navigation:navigation-ui:2.2.1] /home/breens/.gradle/caches/transforms-3/380916c6ab93ced858439646ca395f57/transformed/navigation-ui-2.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.4.0] /home/breens/.gradle/caches/transforms-3/cbeb5760e102e25da6bf512bbd14a8e7/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.4.0] /home/breens/.gradle/caches/transforms-3/cbeb5760e102e25da6bf512bbd14a8e7/transformed/material-1.4.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /home/breens/.gradle/caches/transforms-3/e56e259aff47784b59d63cb8e06d46ad/transformed/constraintlayout-2.1.0/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.1.0] /home/breens/.gradle/caches/transforms-3/e56e259aff47784b59d63cb8e06d46ad/transformed/constraintlayout-2.1.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] /home/breens/.gradle/caches/transforms-3/006e349fa3147bf01ae96d02f61a65bc/transformed/constraintlayout-2.1.1/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] /home/breens/.gradle/caches/transforms-3/006e349fa3147bf01ae96d02f61a65bc/transformed/constraintlayout-2.1.1/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.appcompat:appcompat:1.3.1] /home/breens/.gradle/caches/transforms-3/439cb19340e12aa62771272ae0595795/transformed/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat:1.3.1] /home/breens/.gradle/caches/transforms-3/439cb19340e12aa62771272ae0595795/transformed/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] /home/breens/.gradle/caches/transforms-3/c7c64193b0c4fbfb62e9c87cf05fb0a6/transformed/jetified-lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
@@ -181,10 +184,6 @@ MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /home/breens/.gradle/
 MERGED from [com.github.corouteam:GlideToVectorYou:v2.0.0] /home/breens/.gradle/caches/transforms-3/85d6e6efe8e63889cddfcc006e48e7df/transformed/jetified-GlideToVectorYou-v2.0.0/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/breens/.gradle/caches/transforms-3/6668f8a0f8d9342148abf404094e3d6c/transformed/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.github.bumptech.glide:glide:4.11.0] /home/breens/.gradle/caches/transforms-3/6668f8a0f8d9342148abf404094e3d6c/transformed/jetified-glide-4.11.0/AndroidManifest.xml:6:5-8:41
-MERGED from [androidx.navigation:navigation-common-ktx:2.2.1] /home/breens/.gradle/caches/transforms-3/47db02eef506d1d1acc49c272e39b686/transformed/navigation-common-ktx-2.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.navigation:navigation-common-ktx:2.2.1] /home/breens/.gradle/caches/transforms-3/47db02eef506d1d1acc49c272e39b686/transformed/navigation-common-ktx-2.2.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /home/breens/.gradle/caches/transforms-3/b71bcbd68517f1e6b7e38b7f82a2e7c8/transformed/jetified-lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /home/breens/.gradle/caches/transforms-3/b71bcbd68517f1e6b7e38b7f82a2e7c8/transformed/jetified-lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/breens/.gradle/caches/transforms-3/7a51dc4f71120fb9abfd415562dbcb80/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /home/breens/.gradle/caches/transforms-3/7a51dc4f71120fb9abfd415562dbcb80/transformed/jetified-viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-fragment:2.2.1] /home/breens/.gradle/caches/transforms-3/c8b8525721e4b2a9350d3c9fa7430310/transformed/navigation-fragment-2.2.1/AndroidManifest.xml:20:5-22:41
@@ -219,6 +218,8 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/breens/.gradle/cach
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/breens/.gradle/caches/transforms-3/87d826a2902912f513ebab6d4558adb6/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.customview:customview:1.0.0] /home/breens/.gradle/caches/transforms-3/175f872aa544130393d7a807c14ab95e/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.customview:customview:1.0.0] /home/breens/.gradle/caches/transforms-3/175f872aa544130393d7a807c14ab95e/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-ktx:2.2.1] /home/breens/.gradle/caches/transforms-3/47db02eef506d1d1acc49c272e39b686/transformed/navigation-common-ktx-2.2.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.navigation:navigation-common-ktx:2.2.1] /home/breens/.gradle/caches/transforms-3/47db02eef506d1d1acc49c272e39b686/transformed/navigation-common-ktx-2.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-common:2.2.1] /home/breens/.gradle/caches/transforms-3/676277dab1a6069150e5c4fca9633c6d/transformed/navigation-common-2.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-common:2.2.1] /home/breens/.gradle/caches/transforms-3/676277dab1a6069150e5c4fca9633c6d/transformed/navigation-common-2.2.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.6.0] /home/breens/.gradle/caches/transforms-3/b317bbf3781c12b23ab81834595a78d8/transformed/core-1.6.0/AndroidManifest.xml:20:5-22:41
@@ -247,6 +248,8 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/breen
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /home/breens/.gradle/caches/transforms-3/72abbfbb852e81b28d32b910c526e47a/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] /home/breens/.gradle/caches/transforms-3/69d9d927b5f5c1de3305d52d724e5ac9/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] /home/breens/.gradle/caches/transforms-3/69d9d927b5f5c1de3305d52d724e5ac9/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /home/breens/.gradle/caches/transforms-3/b71bcbd68517f1e6b7e38b7f82a2e7c8/transformed/jetified-lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] /home/breens/.gradle/caches/transforms-3/b71bcbd68517f1e6b7e38b7f82a2e7c8/transformed/jetified-lifecycle-livedata-core-ktx-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/breens/.gradle/caches/transforms-3/89b1e87c683e542e572d49384fc183fa/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /home/breens/.gradle/caches/transforms-3/89b1e87c683e542e572d49384fc183fa/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /home/breens/.gradle/caches/transforms-3/40dcdc42b600f6cfc9e521d227dce6c8/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
@@ -265,16 +268,16 @@ MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/breens/.gr
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] /home/breens/.gradle/caches/transforms-3/14325a2c2aa897bbc10f03356f77f0c0/transformed/jetified-annotation-experimental-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.caverock:androidsvg-aar:1.3] /home/breens/.gradle/caches/transforms-3/fb98fc6d5182e547fee3b2df673b4195/transformed/jetified-androidsvg-aar-1.3/AndroidManifest.xml:7:5-9:41
 MERGED from [com.caverock:androidsvg-aar:1.3] /home/breens/.gradle/caches/transforms-3/fb98fc6d5182e547fee3b2df673b4195/transformed/jetified-androidsvg-aar-1.3/AndroidManifest.xml:7:5-9:41
-INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
-INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
+INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
+INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
-		INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
+		INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
+		INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
-		ADDED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
-		INJECTED from /home/breens/AndroidStudioProjects/SwiftScore/app/src/main/AndroidManifest.xml
+		INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
+		ADDED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
+		INJECTED from /home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/src/main/AndroidManifest.xml
 service#androidx.room.MultiInstanceInvalidationService
 ADDED from [androidx.room:room-runtime:2.2.5] /home/breens/.gradle/caches/transforms-3/208a656c26e00a8e7d51638fc6882c20/transformed/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
 	android:exported

@@ -9,13 +9,15 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.swift.swiftscore.R
+import com.swift.swiftscore.databinding.ActivityHomeBinding
 import com.swift.swiftscore.repository.MatchesRepository
 import com.swift.swiftscore.repository.StandingsRepository
 import com.swift.swiftscore.repository.TopScorersRepository
 import com.swift.swiftscore.ui.viewmodels.*
-import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityHomeBinding
 
     lateinit var matchesViewModel: MatchesViewModel
     lateinit var standingsViewModel: StandingsViewModel
@@ -23,8 +25,10 @@ class HomeActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityHomeBinding.inflate(layoutInflater)
+        val view = binding.root
         setTheme(R.style.Theme_SwiftScore)
-        setContentView(R.layout.activity_home)
+        setContentView(view)
 
         initiateMatchesViewModel()
         initiateStandingsViewModel()
@@ -34,8 +38,8 @@ class HomeActivity : AppCompatActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.homeNavHostFragment) as NavHostFragment
         val navController = navHostFragment.navController
-        bottomNavigationView.setupWithNavController(navController)
-        bottomNavigationView.itemIconTintList = null
+        binding.bottomNavigationView.setupWithNavController(navController)
+        binding.bottomNavigationView.itemIconTintList = null
     }
 
     private fun initiateMatchesViewModel() {
@@ -43,7 +47,7 @@ class HomeActivity : AppCompatActivity() {
         val viewModelProviderFactory =
             MatchesViewModelProviderFactory(application, matchesRepository)
         matchesViewModel =
-            ViewModelProvider(this, viewModelProviderFactory).get(MatchesViewModel::class.java)
+            ViewModelProvider(this, viewModelProviderFactory)[MatchesViewModel::class.java]
     }
 
     private fun initiateStandingsViewModel() {
@@ -51,7 +55,7 @@ class HomeActivity : AppCompatActivity() {
         val viewModelProviderFactory =
             StandingsViewModelProviderFactory(application, standingsRepository)
         standingsViewModel =
-            ViewModelProvider(this, viewModelProviderFactory).get(StandingsViewModel::class.java)
+            ViewModelProvider(this, viewModelProviderFactory)[StandingsViewModel::class.java]
     }
 
     private fun initiateTopScorersViewModel() {
@@ -59,7 +63,7 @@ class HomeActivity : AppCompatActivity() {
         val viewModelProviderFactory =
             TopScorersViewModelProviderFactory(application, topScorersViewModelRepository)
         topScorersModel =
-            ViewModelProvider(this, viewModelProviderFactory).get(TopScorersViewModel::class.java)
+            ViewModelProvider(this, viewModelProviderFactory)[TopScorersViewModel::class.java]
     }
 
     private fun setLogoInActionBar() {

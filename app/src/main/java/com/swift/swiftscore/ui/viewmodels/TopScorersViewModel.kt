@@ -8,10 +8,9 @@ import android.os.Build
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import com.swift.swiftscore.BuildConfig.API_KEY
 import com.swift.swiftscore.models.topscorersmodel.TopScorersResponse
 import com.swift.swiftscore.repository.TopScorersRepository
-import com.swift.swiftscore.util.Constants
+import com.swift.swiftscore.util.Constants.Companion.API_KEY
 import com.swift.swiftscore.util.Constants.Companion.PL_ID_MATCHES
 import com.swift.swiftscore.util.MatchesApplication
 import com.swift.swiftscore.util.Resource

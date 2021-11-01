@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/breens/AndroidStudioProjects/SwiftScore/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "/home/breens/AndroidStudioProjects/PersonalProjects/RapidScore/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "/home/breens/.gradle/caches/transforms-3/db37c011f3cbbe41b4808d055511c6bb/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",

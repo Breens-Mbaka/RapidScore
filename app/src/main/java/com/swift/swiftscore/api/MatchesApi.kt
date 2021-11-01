@@ -1,10 +1,10 @@
 package com.swift.swiftscore.api
 
-import com.swift.swiftscore.BuildConfig.API_KEY
 import com.swift.swiftscore.models.clubdetailmodel.ClubDetailsResponse
 import com.swift.swiftscore.models.standingsmodel.StandingsResponse
 import com.swift.swiftscore.models.topscorersmodel.TopScorersResponse
 import com.swift.swiftscore.models.upcomingmatchesmodel.UpcomingMatchesResponse
+import com.swift.swiftscore.util.Constants.Companion.API_KEY
 import com.swift.swiftscore.util.Constants.Companion.CURRENT_DATE
 import com.swift.swiftscore.util.Constants.Companion.MATCHDAY_38_FROM_DATE
 import com.swift.swiftscore.util.Constants.Companion.PL_ID_MATCHES

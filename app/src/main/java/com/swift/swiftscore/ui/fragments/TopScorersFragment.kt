@@ -1,27 +1,41 @@
 package com.swift.swiftscore.ui.fragments
 
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.AdapterView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.swift.swiftscore.BuildConfig.API_KEY
 import com.swift.swiftscore.R
 import com.swift.swiftscore.adapters.TopScorerAdapter
+import com.swift.swiftscore.databinding.FragmentTopScorersBinding
 import com.swift.swiftscore.models.topscorersmodel.TopScorersResponse
 import com.swift.swiftscore.ui.HomeActivity
 import com.swift.swiftscore.ui.viewmodels.TopScorersViewModel
+import com.swift.swiftscore.util.Constants.Companion.API_KEY
 import com.swift.swiftscore.util.Constants.Companion.LIGUE1_ID_MATCHES
 import com.swift.swiftscore.util.Constants.Companion.PL_ID_MATCHES
 import com.swift.swiftscore.util.Resource
-import kotlinx.android.synthetic.main.fragment_top_scorers.*
 
 class TopScorersFragment : Fragment(R.layout.fragment_top_scorers) {
+
+    private var _binding: FragmentTopScorersBinding? = null
+    private val binding get() = _binding!!
 
     lateinit var viewModel: TopScorersViewModel
     lateinit var topScorerAdapter: TopScorerAdapter
     val TAG = "UpcomingMatchesFragment"
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentTopScorersBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
@@ -32,7 +46,7 @@ class TopScorersFragment : Fragment(R.layout.fragment_top_scorers) {
     }
 
     private fun changeLeagueTopScorers() {
-        spinner3.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
+        binding.spinner3.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(
                 adapterView: AdapterView<*>?,
                 view: View?,
@@ -42,8 +56,7 @@ class TopScorersFragment : Fragment(R.layout.fragment_top_scorers) {
                 val leagueSelected = adapterView?.getItemAtPosition(position).toString()
                 if (leagueSelected == "Ligue 1") {
                     viewModel.getTopScorers(API_KEY, LIGUE1_ID_MATCHES)
-                }
-                else if(leagueSelected == "Premier League") {
+                } else if (leagueSelected == "Premier League") {
                     viewModel.getTopScorers(API_KEY, PL_ID_MATCHES)
                 }
             }
@@ -77,43 +90,43 @@ class TopScorersFragment : Fragment(R.layout.fragment_top_scorers) {
     }
 
     private fun responseSuccess(topScorersResponse: TopScorersResponse) {
-        iconConnection.visibility = View.INVISIBLE
-        tvPoorConnection.visibility = View.INVISIBLE
-        tvCheckConnection.visibility = View.INVISIBLE
-        tvTryAgain.visibility = View.INVISIBLE
-        btnRetry.visibility = View.INVISIBLE
-        tvAvailability.visibility = View.INVISIBLE
-        tvLater.visibility = View.INVISIBLE
-        rvTopScorers.visibility = View.VISIBLE
+        binding.iconConnection.visibility = View.INVISIBLE
+        binding.tvPoorConnection.visibility = View.INVISIBLE
+        binding.tvCheckConnection.visibility = View.INVISIBLE
+        binding.tvTryAgain.visibility = View.INVISIBLE
+        binding.btnRetry.visibility = View.INVISIBLE
+        binding.tvAvailability.visibility = View.INVISIBLE
+        binding.tvLater.visibility = View.INVISIBLE
+        binding.rvTopScorers.visibility = View.VISIBLE
         topScorerAdapter.differ.submitList(topScorersResponse.data)
     }
 
     private fun responseError() {
-        iconConnection.visibility = View.VISIBLE
-        tvPoorConnection.visibility = View.VISIBLE
-        tvCheckConnection.visibility = View.VISIBLE
-        tvTryAgain.visibility = View.VISIBLE
-        btnRetry.visibility = View.VISIBLE
-        rvTopScorers.visibility = View.INVISIBLE
-        btnRetry.setOnClickListener {
+        binding.iconConnection.visibility = View.VISIBLE
+        binding.tvPoorConnection.visibility = View.VISIBLE
+        binding.tvCheckConnection.visibility = View.VISIBLE
+        binding.tvTryAgain.visibility = View.VISIBLE
+        binding.btnRetry.visibility = View.VISIBLE
+        binding.rvTopScorers.visibility = View.INVISIBLE
+        binding.btnRetry.setOnClickListener {
             viewModel.getTopScorers(
-                com.swift.swiftscore.BuildConfig.API_KEY,
+                API_KEY,
                 PL_ID_MATCHES
             )
         }
     }
 
     private fun showProgressBar() {
-        progressBar.visibility = View.VISIBLE
+        binding.progressBar.visibility = View.VISIBLE
     }
 
     private fun hideProgressBar() {
-        progressBar.visibility = View.INVISIBLE
+        binding.progressBar.visibility = View.INVISIBLE
     }
 
     private fun setupRecyclerView() {
         topScorerAdapter = TopScorerAdapter()
-        rvTopScorers.apply {
+        binding.rvTopScorers.apply {
             adapter = topScorerAdapter
             layoutManager = LinearLayoutManager(activity)
         }
