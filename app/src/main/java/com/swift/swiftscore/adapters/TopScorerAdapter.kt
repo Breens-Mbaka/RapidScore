@@ -1,17 +1,15 @@
 package com.swift.swiftscore.adapters
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.swift.swiftscore.R
+import com.swift.swiftscore.databinding.CustomTopScorersBinding
 import com.swift.swiftscore.models.topscorersmodel.DataXXX
-import kotlinx.android.synthetic.main.custom_top_scorers.view.*
 
 class TopScorerAdapter : RecyclerView.Adapter<TopScorerAdapter.TopScorerViewHolder>() {
-    inner class TopScorerViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    inner class TopScorerViewHolder(val binding: CustomTopScorersBinding) : RecyclerView.ViewHolder(binding.root)
 
     private val differCallback = object : DiffUtil.ItemCallback<DataXXX>() {
         override fun areItemsTheSame(oldItem: DataXXX, newItem: DataXXX): Boolean {
@@ -26,18 +24,13 @@ class TopScorerAdapter : RecyclerView.Adapter<TopScorerAdapter.TopScorerViewHold
     val differ = AsyncListDiffer(this, differCallback)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TopScorerAdapter.TopScorerViewHolder {
-        return TopScorerViewHolder(
-            LayoutInflater.from(parent.context).inflate(
-                R.layout.custom_top_scorers,
-                parent,
-                false
-            )
-        )
+        val binding = CustomTopScorersBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return TopScorerViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: TopScorerViewHolder, position: Int) {
         val player = differ.currentList[position]
-        holder.itemView.apply {
+        holder.binding.apply {
             val rank = player.pos
             if (rank < 10) {
                 var position = "0$rank"

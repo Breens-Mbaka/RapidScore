@@ -1,18 +1,16 @@
 package com.swift.swiftscore.adapters
 
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.bumptech.glide.Glide
-import com.swift.swiftscore.R
+import coil.load
+import com.swift.swiftscore.databinding.CustomLeagueTableBinding
 import com.swift.swiftscore.models.standingsmodel.Table
-import kotlinx.android.synthetic.main.custom_league_table.view.*
 
 class LeagueTableAdapter : RecyclerView.Adapter<LeagueTableAdapter.LeagueTableViewHolder>() {
-    inner class LeagueTableViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    inner class LeagueTableViewHolder(val binding: CustomLeagueTableBinding) : RecyclerView.ViewHolder(binding.root)
 
     private val differCallback = object : DiffUtil.ItemCallback<Table>() {
         override fun areItemsTheSame(oldItem: Table, newItem: Table): Boolean {
@@ -26,27 +24,22 @@ class LeagueTableAdapter : RecyclerView.Adapter<LeagueTableAdapter.LeagueTableVi
 
     val differ = AsyncListDiffer(this, differCallback)
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LeagueTableAdapter.LeagueTableViewHolder {
-        return LeagueTableViewHolder(
-            LayoutInflater.from(parent.context).inflate(
-                R.layout.custom_league_table,
-                parent,
-                false
-            )
-        )
+        val binding = CustomLeagueTableBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return LeagueTableViewHolder(binding)
     }
 
     override fun onBindViewHolder(holder: LeagueTableAdapter.LeagueTableViewHolder, position: Int) {
         val standing = differ.currentList[position]
-        holder.itemView.apply {
+        holder.binding.apply {
             val rank = Integer.parseInt(standing.intRank)
             if (rank < 10) {
-                var position = "0$rank"
-                teamPosition.text = position
+                val rank = "0$rank"
+                teamPosition.text = rank
             } else {
                 teamPosition.text = standing.intRank
             }
 
-            Glide.with(this).load(standing.strTeamBadge).into(teamCrest)
+            teamCrest.load(standing.strTeamBadge)
             teamName.text = standing.strTeam
             gamesPlayed.text = standing.intPlayed
             goalDifference.text = standing.intGoalDifference
