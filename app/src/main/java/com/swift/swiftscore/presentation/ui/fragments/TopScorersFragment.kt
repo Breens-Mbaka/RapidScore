@@ -17,7 +17,7 @@ import com.swift.swiftscore.presentation.ui.viewmodels.TopScorersViewModel
 import com.swift.swiftscore.util.Constants.Companion.API_KEY
 import com.swift.swiftscore.util.Constants.Companion.LIGUE1_ID_MATCHES
 import com.swift.swiftscore.util.Constants.Companion.PL_ID_MATCHES
-import com.swift.swiftscore.util.Resource
+import com.swift.swiftscore.common.Resource
 
 class TopScorersFragment : Fragment(R.layout.fragment_top_scorers) {
 

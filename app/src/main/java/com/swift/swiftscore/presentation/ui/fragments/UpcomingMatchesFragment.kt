@@ -170,7 +170,7 @@ import com.swift.swiftscore.util.Constants.Companion.MATCHDAY_9_FROM_DATE_LIGUE1
 import com.swift.swiftscore.util.Constants.Companion.MATCHDAY_9_START_DATE
 import com.swift.swiftscore.util.Constants.Companion.MATCHDAY_9_START_DATE_LIGUE1
 import com.swift.swiftscore.util.Constants.Companion.PL_ID_MATCHES
-import com.swift.swiftscore.util.Resource
+import com.swift.swiftscore.common.Resource
 
 class UpcomingMatchesFragment : Fragment(R.layout.fragment_upcoming_matches) {
 

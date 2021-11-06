@@ -13,7 +13,7 @@ import com.swift.swiftscore.models.standingsmodel.StandingsResponse
 import com.swift.swiftscore.repository.StandingsRepository
 import com.swift.swiftscore.util.Constants.Companion.PL_ID_TABLE
 import com.swift.swiftscore.util.Constants.Companion.PL_SEASON
-import com.swift.swiftscore.util.Resource
+import com.swift.swiftscore.common.Resource
 import kotlinx.coroutines.launch
 import retrofit2.Response
 import java.io.IOException

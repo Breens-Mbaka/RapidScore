@@ -17,7 +17,7 @@ import com.swift.swiftscore.presentation.ui.viewmodels.StandingsViewModel
 import com.swift.swiftscore.util.Constants.Companion.LIGUE_1_ID_TABLE
 import com.swift.swiftscore.util.Constants.Companion.PL_ID_TABLE
 import com.swift.swiftscore.util.Constants.Companion.PL_SEASON
-import com.swift.swiftscore.util.Resource
+import com.swift.swiftscore.common.Resource
 
 class LeagueTableFragment : Fragment(R.layout.fragment_league_table) {
 

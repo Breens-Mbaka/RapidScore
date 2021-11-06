@@ -13,7 +13,7 @@ import com.swift.swiftscore.repository.TopScorersRepository
 import com.swift.swiftscore.util.Constants.Companion.API_KEY
 import com.swift.swiftscore.util.Constants.Companion.PL_ID_MATCHES
 import com.swift.swiftscore.util.MatchesApplication
-import com.swift.swiftscore.util.Resource
+import com.swift.swiftscore.common.Resource
 import kotlinx.coroutines.launch
 import retrofit2.Response
 import java.io.IOException
