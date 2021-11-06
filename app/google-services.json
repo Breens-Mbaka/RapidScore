@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "304214713275",
+    "project_id": "rapidscore-d828f",
+    "storage_bucket": "rapidscore-d828f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:304214713275:android:d5d5d0057062a9d41e1a9e",
+        "android_client_info": {
+          "package_name": "com.swift.swiftscore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "304214713275-9mf8neg4m0ot2c6oep1fbiqohi8n4g5f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiTcqnrmXm8aaUzkzZ1hBwBY0Gou2qQCw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "304214713275-9mf8neg4m0ot2c6oep1fbiqohi8n4g5f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

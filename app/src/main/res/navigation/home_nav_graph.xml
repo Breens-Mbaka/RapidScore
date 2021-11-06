@@ -6,14 +6,14 @@
 
     <fragment
         android:id="@+id/upcomingMatchesFragment"
-        android:name="com.swift.swiftscore.ui.fragments.UpcomingMatchesFragment"
+        android:name="com.swift.swiftscore.presentation.ui.fragments.UpcomingMatchesFragment"
         android:label="UpcomingMatchesFragment" />
     <fragment
         android:id="@+id/leagueTableFragment"
-        android:name="com.swift.swiftscore.ui.fragments.LeagueTableFragment"
+        android:name="com.swift.swiftscore.presentation.ui.fragments.LeagueTableFragment"
         android:label="LeagueTableFragment" />
     <fragment
         android:id="@+id/topScorersFragment"
-        android:name="com.swift.swiftscore.ui.fragments.TopScorersFragment"
+        android:name="com.swift.swiftscore.presentation.ui.fragments.TopScorersFragment"
         android:label="TopScorersFragment" />
 </navigation>

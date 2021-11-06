@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.corouteam:GlideToVectorYou:v2.0.0@aar">
     <CLASSES>
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fbcaf5a44cf9d8fc911ecfadeccb1260/transformed/jetified-GlideToVectorYou-v2.0.0/AndroidManifest.xml" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/fbcaf5a44cf9d8fc911ecfadeccb1260/transformed/jetified-GlideToVectorYou-v2.0.0/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/fbcaf5a44cf9d8fc911ecfadeccb1260/transformed/jetified-GlideToVectorYou-v2.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3bbebd666112f8a7b313abb59b33a4fe/transformed/jetified-GlideToVectorYou-v2.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3bbebd666112f8a7b313abb59b33a4fe/transformed/jetified-GlideToVectorYou-v2.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3bbebd666112f8a7b313abb59b33a4fe/transformed/jetified-GlideToVectorYou-v2.0.0/AndroidManifest.xml" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
