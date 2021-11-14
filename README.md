@@ -1,5 +1,7 @@
 # RapidScore
 
+# 🛠️Hi!The app might have some bugs since it's undergoing some refactors🛠
+
 ### Screenshots
 <p align="left">
 <img src="/images/upcomingmatches.png" width="30%"/> 
