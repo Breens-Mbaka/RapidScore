@@ -1,8 +1,8 @@
 package com.swift.swiftscore.data.remote
 
-import com.swift.swiftscore.models.standingsmodel.StandingsResponse
-import com.swift.swiftscore.models.topscorersmodel.TopScorersResponse
-import com.swift.swiftscore.models.upcomingmatchesmodel.UpcomingMatchesResponse
+import com.swift.swiftscore.data.remote.dto.matchesdto.MatchesDto
+import com.swift.swiftscore.data.remote.dto.standingsdto.StandingsDto
+import com.swift.swiftscore.data.remote.dto.statsdto.StatsDto
 import com.swift.swiftscore.util.Constants
 import retrofit2.Response
 import retrofit2.http.GET
@@ -20,7 +20,7 @@ interface SportsDataApi {
         dateFrom: String = Constants.CURRENT_DATE,
         @Query("date_to")
         dateTo: String = Constants.MATCHDAY_38_FROM_DATE
-    ): Response<UpcomingMatchesResponse>
+    ): MatchesDto
 
     //get the league table standings
     @GET("api/v1/json/1/lookuptable.php")
@@ -29,7 +29,7 @@ interface SportsDataApi {
         leagueId: String = Constants.PL_ID_TABLE,
         @Query("s")
         season: String = Constants.PL_SEASON,
-    ): Response<StandingsResponse>
+    ): StandingsDto
 
     //get top scorers
     @GET("api/v1/soccer/topscorers")
@@ -38,5 +38,5 @@ interface SportsDataApi {
         apiKey: String = Constants.API_KEY,
         @Query("season_id")
         seasonId: String = Constants.PL_ID_MATCHES
-    ): Response<TopScorersResponse>
+    ): StatsDto
 }
