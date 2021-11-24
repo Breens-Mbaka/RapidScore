@@ -1,6 +1,6 @@
 # RapidScore
 
-# 🛠️Hi!The app might have some bugs since it's undergoing some refactors🛠
+# 🛠️Hi!The app might have some bugs since it's undergoing major refactoring🛠
 
 ### Screenshots
 <p align="left">
